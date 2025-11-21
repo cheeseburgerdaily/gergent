@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patch Notes</title>
+
+<!-- Nunito font -->
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    background-color: #150d23;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #e6eef6;
+  }
+
+  .topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #10001f;
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+  }
+
+  /* SIDEBAR BASE */
+  .sidebar {
+    position: fixed;
+    top: 65px;
+    left: 0;
+    width: 60px;
+    height: 100vh;
+    background-color: #10001f;
+    padding-top: 60px;
+    overflow-x: hidden;
+    transition: width 0.25s ease;
+    z-index: 10;
+  }
+
+  /* EXPANDED SIDEBAR */
+  .sidebar.open {
+    width: 180px;
+  }
+
+  /* SIDEBAR ITEMS */
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 18px;
+    cursor: pointer;
+    color: white;
+    font-family: "Nunito", sans-serif;
+  }
+
+  .sidebar-item:hover {
+    background-color: #30005e;
+    border-radius: 8px;
+  }
+
+  /* TEXT LABELS */
+  .sidebar-text {
+    opacity: 0;
+    white-space: nowrap;
+    transition: opacity 0.2s ease;
+    font-size: 16px;
+  }
+
+  .sidebar.open .sidebar-text {
+    opacity: 1;
+  }
+
+  /* Icons recolor */
+  .cases-icon,
+  .home-icon,
+  .inventory-icon,
+  .trade-icon {
+    filter: invert(62%) sepia(13%) saturate(722%) hue-rotate(233deg) brightness(90%) contrast(86%);
+    transform: translateY(-5%);
+    width: 24px;
+  }
+
+  .menu-icon {
+    position: absolute;
+    left: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .menu-icon div {
+    width: 26px;
+    height: 3px;
+    background-color: #88719e;
+    border-radius: 3px;
+  }
+
+  .center-box {
+    background-color: #88719e;
+    padding: 10px 16px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 16px;
+  }
+
+  .center-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .wallet-btn {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .wallet-btn:hover {
+    background-color: #28b863;
+  }
+
+  .settings-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+    cursor: pointer;
+    filter: invert(62%) sepia(13%) saturate(722%) hue-rotate(233deg) brightness(90%) contrast(86%);
+  }
+
+  .rewards-icon {
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-51%);
+    width: 22px;
+    cursor: pointer;
+    filter: invert(62%) sepia(13%) saturate(722%) hue-rotate(233deg) brightness(90%) contrast(86%);
+  }
+
+  .profile-icon {
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-51%);
+    width: 22px;
+    cursor: pointer;
+    filter: invert(62%) sepia(13%) saturate(722%) hue-rotate(233deg) brightness(90%) contrast(86%);
+  }
+
+  /* MAIN CONTENT AREA */
+  .page-content {
+    margin-left: 100px;   /* space for sidebar */
+    margin-right: 40px;
+    margin-top: 110px;    /* space for topbar */
+    padding-bottom: 40px;
+    font-family: "Nunito", sans-serif;
+  }
+
+  .page-title {
+    font-size: 28px;
+    font-weight: 800;
+    color: #c7b2df;
+    margin-bottom: 10px;
+  }
+
+  .page-subtitle {
+    font-size: 16px;
+    color: #9aa3ad;
+    margin-bottom: 25px;
+  }
+
+  .patch-list {
+    max-width: 700px;
+  }
+
+  .patch-note {
+    background-color: #10001f;
+    margin-bottom: 12px;
+    padding: 14px 18px;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    border-left: 4px solid #88719e;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+  .patch-note:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(136, 113, 158, 0.4);
+    border-color: #2ecc71;
+  }
+
+  .patch-note h2 {
+    margin: 0 0 6px;
+    font-size: 18px;
+    color: #f1c40f;
+  }
+
+  .patch-note p {
+    margin: 0;
+    font-size: 14px;
+    color: #e6eef6;
+    line-height: 1.5;
+  }
+
+/* Smooth page fade-in */
+
+  to   { opacity: 1; transform: translateY(0); }
+}
+body {}
+
+
+
+
+
+/* Notification bar */
+.notif-bar {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.9);
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: "Nunito", Arial, sans-serif;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 9999;
+}
+.notif-bar.show { opacity: 1; }
+.notif-bar.error { background: #c0392b; }
+.notif-bar.success { background: #27ae60; }
+
+</style>
+</head>
+<body>
+<div id="notifBar" class="notif-bar"></div>
+
+
+<div id="loginButton" style="position: fixed; bottom: 15px; right: 15px; background:#7d5fff; padding:10px 16px; border-radius:8px; color:#fff; cursor:pointer; font-size:15px; font-weight:bold; z-index:9999;">Login</div>
+
+
+
+<!-- TOP BAR -->
+<div class="topbar">
+
+  <div class="menu-icon" onclick="toggleSidebar()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="center-group">
+    <div class="center-box">
+        <span id="moneyAmount" class="amount">$0.00</span>
+    </div>
+    <button class="wallet-btn">Wallet</button>
+    <img src="images/settings.png" class="settings-icon" alt="settings" onclick="location.href='settings.html'">
+    <img src="images/rewards.png" class="rewards-icon" alt="rewards" onclick="location.href='rewards.html'">
+    <img src="images/profile.png" class="profile-icon" alt="profile" onclick="location.href='profile.html'">
+  </div>
+
+</div>
+
+<!-- LEFT SIDEBAR -->
+<div class="sidebar" id="sidebar">
+
+  <div class="sidebar-item" onclick="location.href='index.html'">
+    <img src="images/home.png" class="home-icon">
+    <span class="sidebar-text">Home</span>
+  </div>
+
+  <div class="sidebar-item" onclick="location.href='casepage.html'">
+    <img src="images/cases.png" class="cases-icon">
+    <span class="sidebar-text">Cases</span>
+  </div>
+
+  <div class="sidebar-item" onclick="location.href='inventory.html'">
+    <img src="images/inventory.png" class="inventory-icon">
+    <span class="sidebar-text">Inventory</span>
+  </div>
+
+  <div class="sidebar-item" onclick="location.href='tradeup.html'">
+    <img src="images/trade.png" class="trade-icon">
+    <span class="sidebar-text">Trade Ups</span>
+  </div>
+
+</div>
+
+<!-- PATCH NOTES CONTENT -->
+<div class="page-content">
+  <div class="page-title">Patch Notes</div>
+  <div class="page-subtitle">All updates and changes to Counter Strike : Gergent Offensive.</div>
+
+  <div class="patch-list">
+    <div class="patch-note">
+      <h2>3.01</h2>
+      <p>Accounts & inventory are now backed by a login system. You can create an account, log in, and have your balance and drops persist between sessions.</p>
+    </div>
+
+    <div class="patch-note">
+      <h2>3.0</h2>
+      <p>Introduced a completely brand new look, usernames, settings, and more.</p>
+    </div>
+
+    <div class="patch-note">
+      <h2>2.11</h2>
+      <p>Made it so that the spin doesn't always end in the middle of the skin and made it so the yellow line doesn't disappear after the spin stops.</p>
+    </div>
+
+    <div class="patch-note">
+      <h2>2.1</h2>
+      <p>Added Snakebite Case.</p>
+    </div>
+
+    <div class="patch-note">
+      <h2>2.01</h2>
+      <p>New go back button design, fixed an error with the DreamHack 2014 Cobblestone Souvenir Package not taking money when opening the case, added button hover effect when hovering over the Patch Notes button.</p>
+    </div>
+
+    <div class="patch-note">
+      <h2>2.0</h2>
+      <p>Introduced 4 new cases, inventory overhaul, deposit & withdraw, souvenirs, major design improvements, patch notes & more.</p>
+    </div>
+
+    <div class="patch-note">
+      <h2>1.22</h2>
+      <p>Small fixes to missing textures.</p>
+    </div>
+
+    <div class="patch-note">
+      <h2>1.21</h2>
+      <p>Sell all button in inventory.</p>
+    </div>
+
+    <div class="patch-note">
+      <h2>1.2</h2>
+      <p>Addition of StatTrak™ and cleaner inventory design.</p>
+    </div>
+
+    <div class="patch-note">
+      <h2>1.1</h2>
+      <p>New inventory buttons.</p>
+    </div>
+
+    <div class="patch-note">
+      <h2>1.0</h2>
+      <p>Release of game & introduction of wear & floats.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+function toggleSidebar() {
+  document.getElementById("sidebar").classList.toggle("open");
+}
+
+/* Money display logic (same as index) */
+function refreshMoneyDisplay() {
+  document.getElementById('moneyAmount').textContent = Money.format(Money.get());
+}
+Money.onChange(refreshMoneyDisplay);
+
+if (Money.get() === 0) {
+   Money.add(10);
+}
+refreshMoneyDisplay();
+</script>
+
+<script type="module" src="money.js"></script>
+<script src="money_controls.js"></script>
+<script src="kilowatt.js"></script>
+<script src="recoil.js"></script>
+
+
+<script>
+function updateLoginButton() {
+    const btn = document.getElementById("loginButton");
+    if (!btn) return;
+    if (!localStorage.uid) {
+        btn.textContent = "Login";
+        btn.onclick = () => window.location.href = "login.html";
+    } else {
+        const user = localStorage.username || "User";
+        btn.textContent = "Logout (" + user + ")";
+        btn.onclick = () => {
+            localStorage.removeItem("uid");
+            localStorage.removeItem("username");
+            location.reload();
+        };
+    }
+}
+updateLoginButton();
+</script>
+
+
+<script>
+window.showNotification = function(msg, type) {
+  var bar = document.getElementById('notifBar');
+  if (!bar) return;
+  bar.textContent = msg;
+  bar.classList.remove('error','success');
+  if (type === 'error') bar.classList.add('error');
+  if (type === 'success') bar.classList.add('success');
+  bar.classList.add('show');
+  clearTimeout(window._notifTimer);
+  window._notifTimer = setTimeout(function() {
+    bar.classList.remove('show');
+  }, 2200);
+}
+</script>
+
+</body>
+</html>

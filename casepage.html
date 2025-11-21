@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cases</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+body {
+ background-color: #150d23;
+ margin: 0;
+ font-family: "Nunito", sans-serif;
+ color: white;
+}
+
+/* TOP BAR */
+.topbar {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ background-color: #10001f;
+ padding: 12px 0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ z-index: 20;
+}
+
+ /* SIDEBAR BASE */
+.sidebar {
+ position: fixed;
+ top: 65px;
+ left: 0;
+ width: 60px;
+ height: 100vh;
+ background-color: #10001f;
+ padding-top: 60px;
+ overflow-x: hidden;
+ transition: width 0.25s ease;
+ z-index: 10;
+}
+
+ /* EXPANDED SIDEBAR */
+.sidebar.open {
+ width: 180px;
+}
+
+ /* SIDEBAR ITEMS */
+.sidebar-item {
+ display: flex;
+ align-items: center;
+ gap: 12px;
+ padding: 12px 18px;
+ cursor: pointer;
+ color: white;
+ font-family: "Nunito", sans-serif;
+}
+
+.sidebar-item:hover {
+ background-color: #30005e;
+ border-radius: 8px;
+}
+
+ /* ICONS */
+.sidebar-icon {
+ width: 24px;
+ height: 24px;
+}
+
+ /* TEXT LABELS */
+.sidebar-text {
+ opacity: 0;
+ white-space: nowrap;
+ transition: opacity 0.2s ease;
+ font-size: 16px;
+}
+
+.sidebar.open .sidebar-text {
+ opacity: 1;
+}
+
+/* ICON FILTER */
+.sidebar-icon,
+.home-icon,
+.cases-icon,
+.inventory-icon,
+.trade-icon {
+ filter: invert(62%) sepia(13%) saturate(722%) hue-rotate(233deg) brightness(90%) contrast(86%);
+ transform: translateY(-5%);
+ width: 24px;
+}
+
+/* MENU ICON */
+.menu-icon {
+ position: absolute;
+ left: 17px;
+ top: 50%;
+ transform: translateY(-50%);
+ cursor: pointer;
+ display: flex;
+ flex-direction: column;
+ gap: 5px;
+}
+.menu-icon div {
+ width: 26px;
+ height: 3px;
+ background-color: #88719e;
+ border-radius: 3px;
+}
+
+/* CENTER MONEY BOX */
+.center-group {
+ display: flex;
+ align-items: center;
+ gap: 5px;
+}
+
+.center-box {
+ background-color: #88719e;
+ padding: 10px 16px;
+ border-radius: 6px;
+ display: flex;
+ align-items: center;
+ gap: 8px;
+ font-weight: 700;
+ font-size: 16px;
+}
+
+/* WALLET BUTTON — full size restored */
+.wallet-btn {
+ background-color: #2ecc71;
+ color: white;
+ border: none;
+ padding: 10px 16px;
+ border-radius: 6px;
+ font-family: "Nunito", sans-serif;
+ font-weight: 700;
+ cursor: pointer;
+ font-size: 16px;
+}
+.wallet-btn:hover { background-color: #28b863; }
+
+/* TOP RIGHT ICONS */
+.settings-icon,
+.rewards-icon,
+.profile-icon {
+ position: absolute;
+ top: 50%;
+ transform: translateY(-51%);
+ width: 22px;
+ cursor: pointer;
+ filter: invert(62%) sepia(13%) saturate(722%) hue-rotate(233deg) brightness(90%) contrast(86%);
+}
+.settings-icon { right: 20px; }
+.profile-icon  { right: 60px; }
+.rewards-icon  { right: 100px; }
+
+/* CONTENT HEADER CONTAINER (Title and Filter) */
+.content-header {
+ margin-left: 120px;
+ margin-top: 130px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding-right: 40px; /* Aligns with case-grid padding */
+}
+
+/* CONTENT TITLE */
+.page-title {
+ font-size: 32px;
+ font-weight: 800;
+ color: #ffffff;
+ margin: 0;
+}
+
+/* FILTER DROPDOWN STYLES */
+#sortFilter {
+ padding: 8px 12px;
+ border-radius: 6px;
+ border: 1px solid #4a2c7a;
+ background-color: #1b0d2e;
+ color: white;
+ font-family: "Nunito", sans-serif;
+ font-size: 16px;
+ cursor: pointer;
+ appearance: none; /* Remove default dropdown arrow */
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%23ffffff' d='M5 8l5 5 5-5z'/%3E%3C/svg%3E"); /* Custom arrow */
+ background-repeat: no-repeat;
+ background-position: right 10px center;
+ background-size: 12px;
+}
+#sortFilter:focus {
+ outline: none;
+ border-color: #6d35c7;
+}
+
+/* CASE GRID */
+.case-grid {
+ margin-left: 120px;
+ margin-top: 25px;
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+ gap: 20px;
+ padding-right: 40px;
+ padding-bottom: 40px;
+}
+
+.case-item {
+ background: #1b0d2e;
+ border-radius: 10px;
+ padding: 15px;
+ text-align: center;
+ cursor: pointer;
+ transition: 0.15s;
+ border: 2px solid #2a1744;
+}
+
+.case-item:hover {
+ transform: translateY(-4px);
+ border-color: #6d35c7;
+ box-shadow: 0 0 12px rgba(109, 53, 199, 0.5);
+}
+
+.case-item img {
+ width: 150px;
+ height: 120px;
+ object-fit: cover;
+ border-radius: 6px;
+}
+
+.case-item h3 {
+ margin: 12px 0 6px 0;
+ font-size: 1.15rem;
+}
+
+.case-item .price {
+ color: #8ae2ff;
+ font-weight: 800;
+ font-size: 1rem;
+}
+
+/* Smooth page fade-in */
+
+  to   { opacity: 1; transform: translateY(0); }
+}
+body {}
+
+
+
+
+
+/* Notification bar */
+.notif-bar {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.9);
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: "Nunito", Arial, sans-serif;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 9999;
+}
+.notif-bar.show { opacity: 1; }
+.notif-bar.error { background: #c0392b; }
+.notif-bar.success { background: #27ae60; }
+
+</style>
+</head>
+<body>
+<div id="notifBar" class="notif-bar"></div>
+
+
+<div id="loginButton" style="position: fixed; bottom: 15px; right: 15px; background:#7d5fff; padding:10px 16px; border-radius:8px; color:#fff; cursor:pointer; font-size:15px; font-weight:bold; z-index:9999;">Login</div>
+
+
+
+<div class="topbar">
+
+ <div class="menu-icon" onclick="toggleSidebar()">
+  <div></div><div></div><div></div>
+ </div>
+
+ <div class="center-group">
+  <div class="center-box">
+   <span id="moneyAmount">$0.00</span>
+  </div>
+
+    <button class="wallet-btn" onclick="location.href='money_transfer.html'">Wallet</button>
+ </div>
+
+ <img class="settings-icon" src="images/settings.png" onclick="location.href='settings.html'">
+ <img class="rewards-icon" src="images/rewards.png" onclick="location.href='rewards.html'">
+ <img class="profile-icon" src="images/profile.png" onclick="location.href='profile.html'">
+
+</div>
+
+<div class="sidebar" id="sidebar">
+
+ <div class="sidebar-item" onclick="location.href='index.html'">
+ <img src="images/home.png" class="home-icon">
+ <span class="sidebar-text">Home</span>
+ </div>
+
+ <div class="sidebar-item" onclick="location.href='casepage.html'">
+ <img src="images/cases.png" class="cases-icon">
+ <span class="sidebar-text">Cases</span>
+ </div>
+
+ <div class="sidebar-item" onclick="location.href='inventory.html'">
+ <img src="images/inventory.png" class="inventory-icon">
+ <span class="sidebar-text">Inventory</span>
+ </div>
+
+ <div class="sidebar-item" onclick="location.href='tradeup.html'">
+ <img src="images/trade.png" class="trade-icon">
+ <span class="sidebar-text">Trade Ups</span>
+ </div>
+
+</div>
+
+<div class="content-header">
+ <div class="page-title">Select a Case to Open</div>
+
+  <div>
+  <select id="sortFilter" onchange="sortCases()">
+   <option value="recent">Recently Added</option>
+   <option value="price-desc">Price: Highest to Lowest</option>
+   <option value="price-asc">Price: Lowest to Highest</option>
+  </select>
+ </div>
+</div>
+
+<div class="case-grid" id="caseGrid">
+ <div class="case-item" onclick="location.href='snakebite.html'" data-price="2.25" data-added="2025-11-19T11:00:00Z">
+ <img src="images/snakebite.webp">
+ <h3>Snakebite Case</h3>
+ <span class="price">$2.25</span>
+ </div>
+
+ <div class="case-item" onclick="location.href='dreamhack_2014_cobblestone_souvenir.html'" data-price="1400.00" data-added="2025-11-19T10:00:00Z">
+ <img src="images/dreamhack_2014_cobblestone_souvenir.webp">
+ <h3>DreamHack 2014 Cobblestone Souvenir</h3>
+ <span class="price">$1,400.00</span>
+ </div>
+
+ <div class="case-item" onclick="location.href='revolution.html'" data-price="2.35" data-added="2025-11-18T13:00:00Z">
+ <img src="images/revolution.webp">
+ <h3>Revolution Case</h3>
+ <span class="price">$2.35</span>
+ </div>
+
+ <div class="case-item" onclick="location.href='dreamsandnightmares.html'" data-price="3.85" data-added="2025-11-18T12:00:00Z">
+ <img src="images/dreamsandnightmares.webp">
+ <h3>Dreams & Nightmares</h3>
+ <span class="price">$3.85</span>
+ </div>
+
+ <div class="case-item" onclick="location.href='recoil.html'" data-price="2.25" data-added="2025-11-18T11:00:00Z">
+ <img src="images/recoil.webp">
+ <h3>Recoil Case</h3>
+ <span class="price">$2.25</span>
+ </div>
+
+ <div class="case-item" onclick="location.href='kilowatt.html'" data-price="2.20" data-added="2025-11-18T10:00:00Z">
+ <img src="images/kilowatt.webp">
+ <h3>Kilowatt Case</h3>
+ <span class="price">$2.20</span>
+ </div>
+</div>
+
+<script type="module" src="money.js"></script>
+<script src="money_controls.js"></script>
+
+<script>
+function toggleSidebar() {
+ document.getElementById("sidebar").classList.toggle("open");
+}
+
+function refreshMoneyDisplay() {
+ document.getElementById("moneyAmount").textContent = Money.format(Money.get());
+}
+
+Money.onChange(refreshMoneyDisplay);
+refreshMoneyDisplay();
+
+
+// --- NEW JAVASCRIPT FOR SORTING ---
+
+// Initial unsorted order (used for the 'Recently Added' default)
+const originalCaseItems = Array.from(document.getElementById('caseGrid').children);
+
+/**
+ * Parses the price from the data-price attribute, handling potential
+ * currency formatting (though in this example, it's a clean number).
+ * @param {HTMLElement} caseItem - The .case-item element.
+ * @returns {number} The price as a float.
+ */
+function getCasePrice(caseItem) {
+ // We use the data-price attribute for reliable sorting
+ return parseFloat(caseItem.dataset.price);
+}
+
+/**
+ * Parses the date from the data-added attribute.
+ * @param {HTMLElement} caseItem - The .case-item element.
+ * @returns {Date} The date object.
+ */
+function getCaseAddedDate(caseItem) {
+ return new Date(caseItem.dataset.added);
+}
+
+
+/**
+ * Sorts the case items based on the selected filter option.
+ */
+function sortCases() {
+ const filterValue = document.getElementById('sortFilter').value;
+ const grid = document.getElementById('caseGrid');
+ let items = Array.from(grid.children);
+
+ if (filterValue === 'price-asc') {
+ items.sort((a, b) => getCasePrice(a) - getCasePrice(b));
+ } else if (filterValue === 'price-desc') {
+ items.sort((a, b) => getCasePrice(b) - getCasePrice(a));
+ } else if (filterValue === 'recent') {
+ // Sort by recent: most recent (latest date) at the top
+ items.sort((a, b) => getCaseAddedDate(b) - getCaseAddedDate(a));
+ }
+
+ // Clear the current grid and append sorted items
+ grid.innerHTML = '';
+ items.forEach(item => grid.appendChild(item));
+}
+
+// Initial sort to ensure 'Recently Added' is applied on load
+sortCases();
+
+</script>
+
+
+<script>
+function updateLoginButton() {
+    const btn = document.getElementById("loginButton");
+    if (!btn) return;
+    if (!localStorage.uid) {
+        btn.textContent = "Login";
+        btn.onclick = () => window.location.href = "login.html";
+    } else {
+        const user = localStorage.username || "User";
+        btn.textContent = "Logout (" + user + ")";
+        btn.onclick = () => {
+            localStorage.removeItem("uid");
+            localStorage.removeItem("username");
+            location.reload();
+        };
+    }
+}
+updateLoginButton();
+</script>
+
+
+<script>
+window.showNotification = function(msg, type) {
+  var bar = document.getElementById('notifBar');
+  if (!bar) return;
+  bar.textContent = msg;
+  bar.classList.remove('error','success');
+  if (type === 'error') bar.classList.add('error');
+  if (type === 'success') bar.classList.add('success');
+  bar.classList.add('show');
+  clearTimeout(window._notifTimer);
+  window._notifTimer = setTimeout(function() {
+    bar.classList.remove('show');
+  }, 2200);
+}
+</script>
+
+</body>
+</html>

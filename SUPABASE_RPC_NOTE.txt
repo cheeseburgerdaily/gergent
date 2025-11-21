@@ -1,0 +1,5 @@
+Run in Supabase SQL editor:
+create or replace function increment_cases_opened(uid uuid)
+returns void language sql as $$
+update stats set cases_opened = cases_opened + 1 where user_id = uid;
+$$;

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Inventory</title>
+
+<!-- Nunito Font -->
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="inventory.css">
+
+<style>
+/* Smooth page fade-in */
+
+  to   { opacity: 1; transform: translateY(0); }
+}
+body {}
+
+
+
+
+/* Notification bar */
+.notif-bar {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.9);
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: "Nunito", Arial, sans-serif;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 9999;
+}
+.notif-bar.show { opacity: 1; }
+.notif-bar.error { background: #c0392b; }
+.notif-bar.success { background: #27ae60; }
+
+</style>
+</head>
+<body>
+<div id="notifBar" class="notif-bar"></div>
+
+
+<div id="loginButton" style="position: fixed; bottom: 15px; right: 15px; background:#7d5fff; padding:10px 16px; border-radius:8px; color:#fff; cursor:pointer; font-size:15px; font-weight:bold; z-index:9999;">Login</div>
+
+
+
+<!-- TOP BAR -->
+<div class="topbar">
+
+  <div class="menu-icon" onclick="toggleSidebar()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="center-group">
+      <div class="center-box">
+          <span id="moneyAmount">$0.00</span>
+      </div>
+
+      <button class="wallet-btn" onclick="location.href='money_transfer.html'">
+        Wallet
+      </button>
+  </div>
+
+  <img src="images/settings.png" class="settings-icon" onclick="location.href='settings.html'">
+  <img src="images/rewards.png" class="rewards-icon" onclick="location.href='rewards.html'">
+  <img src="images/profile.png" class="profile-icon" onclick="location.href='profile.html'">
+
+</div>
+
+
+<!-- SIDEBAR -->
+<div class="sidebar" id="sidebar">
+
+  <div class="sidebar-item" onclick="location.href='index.html'">
+    <img src="images/home.png" class="home-icon">
+    <span class="sidebar-text">Home</span>
+  </div>
+
+  <div class="sidebar-item" onclick="location.href='casepage.html'">
+    <img src="images/cases.png" class="cases-icon">
+    <span class="sidebar-text">Cases</span>
+  </div>
+
+  <div class="sidebar-item" onclick="location.href='inventory.html'">
+    <img src="images/inventory.png" class="inventory-icon">
+    <span class="sidebar-text">Inventory</span>
+  </div>
+
+  <div class="sidebar-item" onclick="location.href='tradeup.html'">
+    <img src="images/trade.png" class="trade-icon">
+    <span class="sidebar-text">Trade Ups</span>
+  </div>
+
+</div>
+
+<!-- PAGE TITLE -->
+<h1 class="page-title">My Inventory</h1>
+
+<!-- TOP CONTROLS -->
+<div id="inventoryControls">
+    <div id="totalValue">Total Value: <b>$0.00</b></div>
+
+    <div id="topButtons">
+        <button id="sellAllBtn">Sell All</button>
+        <button id="sellSelectedBtn" style="display:none;">Sell Selected (0)</button>
+    </div>
+</div>
+
+<!-- FILTER BAR -->
+<div id="filterBar">
+    <input type="text" id="searchBar" placeholder="Search by name...">
+
+    <select id="rarityFilter">
+        <option value="">All Rarities</option>
+        <option value="gray">Consumer (Gray)</option>
+        <option value="lightblue">Industrial (Light Blue)</option>
+        <option value="blue">Mil-Spec (Blue)</option>
+        <option value="purple">Restricted (Purple)</option>
+        <option value="pink">Classified (Pink)</option>
+        <option value="red">Covert (Red)</option>
+        <option value="yellow">Exceedingly Rare (Gold)</option>
+    </select>
+
+    <select id="sortOrder">
+        <option value="newest">Sort By: Newest</option>
+        <option value="oldest">Sort By: Oldest</option>
+        <option value="float_asc">Float: Low to High</option>
+        <option value="float_desc">Float: High to Low</option>
+        <option value="price_desc">Price: High to Low</option>
+        <option value="price_asc">Price: Low to High</option>
+    </select>
+</div>
+<script>
+    function toggleSidebar() {
+    document.getElementById("sidebar").classList.toggle("open");
+}
+</script>
+<!-- INVENTORY GRID -->
+<div id="inventoryGrid"></div>
+
+<script type="module" src="money.js"></script>
+<script src="money_controls.js"></script>
+<script src="inventory.js"></script>
+
+<script>
+
+
+function refreshMoneyDisplay() {
+     document.getElementById('moneyAmount').textContent = Money.format(Money.get());
+}
+Money.onChange(refreshMoneyDisplay);
+refreshMoneyDisplay();
+</script>
+
+
+<script>
+function updateLoginButton() {
+    const btn = document.getElementById("loginButton");
+    if (!btn) return;
+    if (!localStorage.uid) {
+        btn.textContent = "Login";
+        btn.onclick = () => window.location.href = "login.html";
+    } else {
+        const user = localStorage.username || "User";
+        btn.textContent = "Logout (" + user + ")";
+        btn.onclick = () => {
+            localStorage.removeItem("uid");
+            localStorage.removeItem("username");
+            location.reload();
+        };
+    }
+}
+updateLoginButton();
+</script>
+
+
+<script>
+window.showNotification = function(msg, type) {
+  var bar = document.getElementById('notifBar');
+  if (!bar) return;
+  bar.textContent = msg;
+  bar.classList.remove('error','success');
+  if (type === 'error') bar.classList.add('error');
+  if (type === 'success') bar.classList.add('success');
+  bar.classList.add('show');
+  clearTimeout(window._notifTimer);
+  window._notifTimer = setTimeout(function() {
+    bar.classList.remove('show');
+  }, 2200);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+rarity hexes:
+
+consumer - #adb4bbff
+industrial - #9cc4f1ff
+mil spec - #4a90e2
+restricted - #9b59b6
+classified - #ff4dafff
+covert - #e9331fff
+exceedingly_rare - #f1c40f
+
+
+
+const RARITIES = [
+    // Consumer (Base grade - your largest weight)
+    { name: 'consumer', weight: 0.0256, color: '#adb4bbff' },
+    // Industrial (Your next largest weight)
+    { name: 'industrial', weight: 16, color: '#9cc4f1ff' },
+    // Mil-Spec (Blue)
+    { name: 'mil_spec', weight: 3.20,  color: '#4a90e2' },
+    // Restricted (Purple)
+    { name: 'restricted', weight: 0.64,  color: '#9b59b6' },
+    // Classified (Pink/Magenta)
+    { name: 'classified', weight: 0.128,  color: '#ff4dafff' },
+    // Covert (Red)
+    { name: 'covert', weight: 80.0064, color: '#e9331fff'}
+];
+
+
+const RARITIES = [
+    { name: 'mil_spec',         weight: 79.92, color: '#4a90e2' },
+    { name: 'restricted',       weight: 15.98, color: '#9b59b6' },
+    { name: 'classified',       weight: 3.20,  color: '#ff4dafff' },
+    { name: 'covert',           weight: 0.64,  color: '#e9331fff' },
+    { name: 'exceedingly_rare', weight: 0.26,  color: '#f1c40f' }
+];

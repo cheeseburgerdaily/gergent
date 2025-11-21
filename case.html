@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Counter Strike : Gergent Offensive</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#0b0c0d; 
+  --panel:#131416; 
+  --muted:#9aa3ad; 
+  --gold:#f1c40f; 
+  --orange:#e67e22;
+}
+
+body {
+  background: linear-gradient(180deg,#0b0c0d,#0f1113);
+  color:#e6eef6; 
+  font-family:"Poppins",sans-serif; 
+  margin:0; 
+  padding:18px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 🎯 Header/Money Layout MATCHING INVENTORY.HTML */
+#moneyBox {
+    position: absolute;
+    right: 18px;
+    top: 18px;
+    background: var(--panel);
+    padding: 8px 16px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+#moneyBox .label { 
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+#moneyBox .amount { 
+    color: var(--gold);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.back-btn { 
+    position:absolute; 
+    left:18px; 
+    top:18px; 
+    background:#2f6fb2; 
+    border:none; 
+    color:white; 
+    padding:8px 14px; 
+    border-radius:8px; 
+    cursor:pointer; 
+    font-size:0.95rem; 
+    font-weight:700;
+}
+
+#siteHeader { 
+    position: absolute;
+    top: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    color:var(--orange); 
+    font-weight:800; 
+    font-size:1.25rem; 
+}
+/* END HEADER FIX */
+
+h2 { 
+    text-align:center; 
+    margin-top: 70px; 
+    color:#dfe9ff; 
+    font-weight: 600; 
+    font-size: 1.2rem;
+}
+
+.button-controls {
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    display: flex;
+    gap: 15px;
+}
+
+#stripWrap {
+  width: 100%;
+  max-width: 900px; 
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+#strip {
+  display: flex;
+  height: 100%;
+  width: max-content;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.tile {
+  width: 86px;
+  height: 90px;
+  margin-right: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 6px;
+  
+  /* 🎨 FIX APPLIED: Set to a slightly higher opacity (brighter) */
+  opacity: 0.9; 
+  
+  /* 🎨 FIX APPLIED: Removed all gradient and complex blending. */
+  background-image: none;
+  background-blend-mode: normal;
+
+  /* 🎨 FIX APPLIED: Subtle inner shadow for tile border depth only */
+  box-shadow: inset 0 0 4px rgba(0,0,0,0.8), /* Soft dark inner edge */
+              0 0 1px rgba(255,255,255,0.1); /* Very subtle light outer edge */
+  
+  transition: opacity 0.3s;
+}
+
+#centerLine {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background: var(--gold);
+  transform: translateX(-50%);
+  z-index: 10;
+  box-shadow: 0 0 10px var(--gold);
+  display: none;
+}
+
+.open-btn, .skip-btn {
+  background: var(--gold); 
+  border: none;
+  color: #111;
+  padding: 12px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: transform 0.1s;
+}
+
+.skip-btn {
+    background: var(--gold); 
+    color: #111;
+    display: none;
+}
+
+.open-btn:hover, .skip-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Winning item display */
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    background: var(--panel);
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+#result .title {
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+#result img {
+    width: 200px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+/* Smooth page fade-in */
+
+  to   { opacity: 1; transform: translateY(0); }
+}
+body {}
+
+
+
+
+
+/* Notification bar */
+.notif-bar {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.9);
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: "Nunito", Arial, sans-serif;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 9999;
+}
+.notif-bar.show { opacity: 1; }
+.notif-bar.error { background: #c0392b; }
+.notif-bar.success { background: #27ae60; }
+
+</style>
+</head>
+<body>
+<div id="notifBar" class="notif-bar"></div>
+
+
+<div id="loginButton" style="position: fixed; bottom: 15px; right: 15px; background:#7d5fff; padding:10px 16px; border-radius:8px; color:#fff; cursor:pointer; font-size:15px; font-weight:bold; z-index:9999;">Login</div>
+
+
+
+<div id="moneyBox">
+  <span class="label">Balance</span>
+  <span id="moneyAmount" class="amount">$0.00</span>
+</div>
+
+<button class="back-btn" onclick="location.href='index.html'">← Back</button>
+
+<div id="siteHeader">COUNTER STRIKE : GERGENT OFFENSIVE</div>
+
+<h2>Opening Kilowatt Case</h2>
+
+<div class="button-controls">
+    <button id="openBtn" class="open-btn">Open Case ($2.20)</button>
+    <button id="skipBtn" class="skip-btn">Skip</button>
+</div>
+
+<div id="stripWrap">
+    <div id="strip"></div>
+    <div class="center-line" id="centerLine"></div>
+</div>
+
+<div id="result"></div>
+
+<script type="module" src="money.js"></script>
+<script src="case.js"></script>
+<script>
+function refreshMoneyDisplay(){ 
+    document.getElementById('moneyAmount').textContent = Money.format(Money.get()); 
+}
+Money.onChange(refreshMoneyDisplay); 
+refreshMoneyDisplay();
+</script>
+
+<script>
+function updateLoginButton() {
+    const btn = document.getElementById("loginButton");
+    if (!btn) return;
+    if (!localStorage.uid) {
+        btn.textContent = "Login";
+        btn.onclick = () => window.location.href = "login.html";
+    } else {
+        const user = localStorage.username || "User";
+        btn.textContent = "Logout (" + user + ")";
+        btn.onclick = () => {
+            localStorage.removeItem("uid");
+            localStorage.removeItem("username");
+            location.reload();
+        };
+    }
+}
+updateLoginButton();
+</script>
+
+
+<script>
+window.showNotification = function(msg, type) {
+  var bar = document.getElementById('notifBar');
+  if (!bar) return;
+  bar.textContent = msg;
+  bar.classList.remove('error','success');
+  if (type === 'error') bar.classList.add('error');
+  if (type === 'success') bar.classList.add('success');
+  bar.classList.add('show');
+  clearTimeout(window._notifTimer);
+  window._notifTimer = setTimeout(function() {
+    bar.classList.remove('show');
+  }, 2200);
+}
+</script>
+
+</body>
+</html>

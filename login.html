@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<style>
+body {
+    background: #090218;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin:0;
+    font-family: "Nunito", Arial, sans-serif;
+    overflow:hidden;
+}
+#loginBox {
+    background: #2a1650;
+    padding: 36px;
+    border-radius: 14px;
+    width: 320px;
+    text-align:center;
+    color:white;
+    box-shadow:0 0 20px rgba(0,0,0,0.5);
+}
+#loginBox input {
+    width: 92%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius:8px;
+    border:none;
+    outline:none;
+}
+#loginBox button {
+    width: 96%;
+    padding: 10px;
+    margin-top: 8px;
+    background:#7d5fff;
+    border:none;
+    border-radius:8px;
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+}
+#notif {
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+#backButton {
+    position: fixed; bottom: 15px; right: 15px; background:#7d5fff;
+    padding:8px 14px; border-radius:8px; color:#fff; cursor:pointer;
+    font-size:14px; font-weight:bold; z-index:9999;
+}
+</style>
+</head>
+<body>
+<div id="backButton" onclick="location.href='index.html'">Back</div>
+
+<div id="loginBox">
+<h2>Login</h2>
+<input id="username" placeholder="Username">
+<input id="password" type="password" placeholder="Password">
+<button id="signupBtn">Sign Up</button>
+<button id="loginBtn">Log In</button>
+<div id="notif"></div>
+</div>
+
+<script type="module">
+import { signupUsername, loginUsername } from "./supabaseClient.js";
+
+const notif = document.getElementById("notif");
+const uEl = document.getElementById("username");
+const pEl = document.getElementById("password");
+
+function show(msg, ok=false) {
+  notif.textContent = msg;
+  notif.style.color = ok ? "#8fff9a" : "#ff9a9a";
+}
+
+document.getElementById("signupBtn").onclick = async () => {
+  const u = uEl.value.trim(); const p = pEl.value;
+  if (!u || !p) return show("Enter username + password");
+  try {
+    const uid = await signupUsername(u,p);
+    localStorage.uid = uid;
+    localStorage.username = u;
+    show("Account created! Logging in…", true);
+    setTimeout(()=>location.href="index.html", 600);
+  } catch(e) {
+    show(e.message || "Signup failed");
+  }
+};
+
+document.getElementById("loginBtn").onclick = async () => {
+  const u = uEl.value.trim(); const p = pEl.value;
+  if (!u || !p) return show("Enter username + password");
+  try {
+    const uid = await loginUsername(u,p);
+    localStorage.uid = uid;
+    localStorage.username = u;
+    show("Logged in! Redirecting…", true);
+    setTimeout(()=>location.href="index.html", 500);
+  } catch(e) {
+    show(e.message || "Login failed");
+  }
+};
+</script>
+</body>
+</html>

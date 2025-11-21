@@ -1,0 +1,441 @@
+{
+  "kilowatt": {
+    "mil_spec": [
+      {
+        "name": "XM1014 | Irezumi",
+        "image": "images/xm1014_irezumi.webp",
+        "float_range": "0.00-0.80",
+        "price": { "FN": "0.33", "MW": "0.13", "FT": "0.05", "WW": "0.05", "BS": "0.04" },
+        "stattrak_available": true
+      },
+      {
+        "name": "UMP-45 | Motorized",
+        "image": "images/ump45_motorized.webp",
+        "float_range": "0.00-0.80",
+        "price": { "FN": "0.35", "MW": "0.13", "FT": "0.07", "WW": "0.05", "BS": "0.04" },
+        "stattrak_available": true
+      },
+      {
+        "name": "Tec-9 | Slugg",
+        "image": "images/tec9_slug.webp",
+        "float_range": "0.00-0.90",
+        "price": { "FN": "0.43", "MW": "0.14", "FT": "0.06", "WW": "0.05", "BS": "0.05" },
+        "stattrak_available": true
+      },
+      {
+        "name": "Dual Berettas | Hideout",
+        "image": "images/dualberettas_hideout.webp",
+        "float_range": "0.00-0.70",
+        "price": { "FN": "0.31", "MW": "0.13", "FT": "0.07", "WW": "0.06", "BS": "0.05" },
+        "stattrak_available": true
+      },
+      {
+        "name": "Nova | Dark Sigil",
+        "image": "images/nova_darksigil.webp",
+        "float_range": "0.00-0.70",
+        "price": { "FN": "0.28", "MW": "0.12", "FT": "0.06", "WW": "0.05", "BS": "0.05" },
+        "stattrak_available": true
+      },
+      {
+        "name": "SSG 08 | Dezastre",
+        "image": "images/ssg08_dezastre.webp",
+        "float_range": "0.00-1.00",
+        "price": { "FN": "0.63", "MW": "0.13", "FT": "0.07", "WW": "0.05", "BS": "0.05" },
+        "stattrak_available": true
+      },
+      {
+        "name": "MAC-10 | Light Box",
+        "image": "images/mac10_lightbox.webp",
+        "float_range": "0.00-1.00",
+        "price": { "FN": "0.63", "MW": "0.18", "FT": "0.07", "WW": "0.05", "BS": "0.02" },
+        "stattrak_available": true
+      }
+    ],
+
+    "restricted": [
+      {
+        "name": "MP7 | Just Smile",
+        "image": "images/mp7_justsmile.webp",
+        "float_range": "0.00-1.00",
+        "price": { "FN": "3.31", "MW": "1.00", "FT": "0.49", "WW": "0.44", "BS": "0.44" },
+        "stattrak_available": true
+      },
+      {
+        "name": "Five-SeveN | Hybrid",
+        "image": "images/fiveseven_hybrid.webp",
+        "float_range": "0.00-1.00",
+        "price": { "FN": "3.48", "MW": "0.97", "FT": "0.49", "WW": "0.46", "BS": "0.42" },
+        "stattrak_available": true
+      },
+      {
+        "name": "Sawed-Off | Analog Input",
+        "image": "images/sawedoff_analoginput.webp",
+        "float_range": "0.00-0.62",
+        "price": { "FN": "1.70", "MW": "0.72", "FT": "0.46", "WW": "0.46", "BS": "0.46" },
+        "stattrak_available": true
+      },
+      {
+        "name": "M4A4 | Etch Lord",
+        "image": "images/m4a4_etchlord.webp",
+        "float_range": "0.00-1.00",
+        "price": { "FN": "4.70", "MW": "1.02", "FT": "0.49", "WW": "0.46", "BS": "0.46" },
+        "stattrak_available": true
+      },
+      {
+        "name": "Glock-18 | Block-18",
+        "image": "images/glock18_block18.webp",
+        "float_range": "0.00-0.67",
+        "price": { "FN": "2.18", "MW": "0.94", "FT": "0.56", "WW": "0.51", "BS": "0.51" },
+        "stattrak_available": true
+      }
+    ],
+
+    "classified": [
+      {
+        "name": "Zeus x27 | Olympus",
+        "image": "images/zeusx27_olympus.webp",
+        "float_range": "0.00-0.67",
+        "price": { "FN": "11.19", "MW": "5.49", "FT": "3.63", "WW": "3.60", "BS": "3.42" },
+        "stattrak_available": true
+      },
+      {
+        "name": "USP-S | Jawbreaker",
+        "image": "images/usps_jawbreaker.webp",
+        "float_range": "0.00-1.00",
+        "price": { "FN": "25.47", "MW": "8.17", "FT": "4.57", "WW": "3.74", "BS": "3.57" },
+        "stattrak_available": true
+      },
+      {
+        "name": "M4A1-S | Black Lotus",
+        "image": "images/m4a1s_blacklotus.webp",
+        "float_range": "0.00-0.70",
+        "price": { "FN": "20.16", "MW": "10.01", "FT": "7.19", "WW": "6.68", "BS": "6.63" },
+        "stattrak_available": true
+      }
+    ],
+
+    "covert": [
+      {
+        "name": "AWP | Chrome Cannon",
+        "image": "images/awp_chromecannon.webp",
+        "float_range": "0.00-1.00",
+        "price": { "FN": "96.83", "MW": "36.08", "FT": "26.73", "WW": "25.60", "BS": "12.80" },
+        "stattrak_available": true
+      },
+      {
+        "name": "AK-47 | Inheritance",
+        "image": "images/ak47_inheritance.webp",
+        "float_range": "0.00-0.80",
+        "price": { "FN": "169.99", "MW": "90.74", "FT": "55.13", "WW": "53.84", "BS": "45.27" },
+        "stattrak_available": true
+      }
+    ],
+
+    "exceedingly_rare": [
+      { "name": "Kukri Knife | Boreal Forest", "image": "images/kukriknife_borealforest.webp", "float_range": "0.06-0.80", "price": { "FN": "128.55", "MW": "60.44", "FT": "56.24", "WW": "54.00", "BS": "53.10" }, "stattrak_available": false },
+      { "name": "Kukri Knife | Vanilla", "image": "images/kukriknife_vanilla.png", "float_range": "0.06-0.80", "price": { "FN": "118.64", "MW": "118.64", "FT": "118.64", "WW": "118.64", "BS": "118.64" }, "stattrak_available": false },
+      { "name": "Kukri Knife | Night Stripe", "image": "images/kukriknife_nightstripe.webp", "float_range": "0.06-0.80", "price": { "FN": "191.10", "MW": "80.97", "FT": "61.02", "WW": "59.16", "BS": "58.61" }, "stattrak_available": false },
+      { "name": "Kukri Knife | Scorched", "image": "images/kukriknife_scorched.webp", "float_range": "0.06-0.80", "price": { "FN": "132.10", "MW": "76.98", "FT": "58.70", "WW": "56.39", "BS": "56.24" }, "stattrak_available": false },
+      { "name": "Kukri Knife | Forest DDPAT", "image": "images/kukriknife_forestddpat.webp", "float_range": "0.06-0.80", "price": { "FN": "119.93", "MW": "65.37", "FT": "56.75", "WW": "55.95", "BS": "53.16" }, "stattrak_available": false },
+      { "name": "Kukri Knife | Stained", "image": "images/kukriknife_stained.webp", "float_range": "0.00-1.00", "price": { "FN": "114.99", "MW": "86.72", "FT": "77.18", "WW": "75.66", "BS": "72.20" }, "stattrak_available": false },
+      { "name": "Kukri Knife | Urban Masked", "image": "images/kukriknife_urbanmasked.webp", "float_range": "0.06-0.80", "price": { "FN": "202.68", "MW": "79.48", "FT": "59.28", "WW": "59.09", "BS": "58.45" }, "stattrak_available": false },
+      { "name": "Kukri Knife | Fade", "image": "images/kukriknife_fade.webp", "float_range": "0.00-0.08", "price": { "FN": "226.29", "MW": "238.64", "FT": "0.00", "WW": "0.00", "BS": "0.00" }, "stattrak_available": false },
+      { "name": "Kukri Knife | Crimson Web", "image": "images/kukriknife_crimsonweb.webp", "float_range": "0.06-0.80", "price": { "FN": "719.99", "MW": "153.59", "FT": "104.11", "WW": "97.07", "BS": "93.47" }, "stattrak_available": false },
+      { "name": "Kukri Knife | Blue Steel", "image": "images/kukriknife_bluesteel.webp", "float_range": "0.00-1.00", "price": { "FN": "162.19", "MW": "104.11", "FT": "95.60", "WW": "89.26", "BS": "87.99" }, "stattrak_available": false },
+      { "name": "Kukri Knife | Case Hardened", "image": "images/kukriknife_casehardened.webp", "float_range": "0.00-1.00", "price": { "FN": "244.73", "MW": "135.50", "FT": "118.29", "WW": "111.48", "BS": "107.11" }, "stattrak_available": false },
+      { "name": "Kukri Knife | Slaughter", "image": "images/kukriknife_slaughter.webp", "float_range": "0.01-0.26", "price": { "FN": "179.04", "MW": "154.74", "FT": "147.72", "WW": "0.00", "BS": "0.00" }, "stattrak_available": false },
+      { "name": "Kukri Knife | Safari Mesh", "image": "images/kukriknife_safarimesh.webp", "float_range": "0.06-0.80", "price": { "FN": "105.61", "MW": "58.07", "FT": "54.34", "WW": "52.03", "BS": "51.91" }, "stattrak_available": false }
+    ]
+  },
+
+  "recoil": {
+    "mil_spec": [
+      { "name": "Negev | Drop Me", "image": "images/negev_dropme.webp", "float_range": "0.00-1.00", "price": { "FN": "0.55", "MW": "0.13", "FT": "0.06", "WW": "0.05", "BS": "0.05" }, "stattrak_available": true },
+      { "name": "UMP-45 | Roadblock", "image": "images/ump45_roadblock.webp", "float_range": "0.00-1.00", "price": { "FN": "0.46", "MW": "0.14", "FT": "0.06", "WW": "0.05", "BS": "0.05" }, "stattrak_available": true },
+      { "name": "MAC-10 | Monkeyflage", "image": "images/mac10_monkeyflage.webp", "float_range": "0.00-1.00", "price": { "FN": "0.47", "MW": "0.13", "FT": "0.06", "WW": "0.05", "BS": "0.05" }, "stattrak_available": true },
+      { "name": "Galil AR | Destroyer", "image": "images/galil_destroyer.webp", "float_range": "0.00-0.70", "price": { "FN": "0.31", "MW": "0.13", "FT": "0.07", "WW": "0.06", "BS": "0.05" }, "stattrak_available": true },
+      { "name": "FAMAS | Meow 36", "image": "images/famas_meow36.webp", "float_range": "0.00-1.00", "price": { "FN": "0.64", "MW": "0.14", "FT": "0.06", "WW": "0.05", "BS": "0.05" }, "stattrak_available": true },
+      { "name": "Glock-18 | Winterized", "image": "images/glock18_winterized.webp", "float_range": "0.00-1.00", "price": { "FN": "0.53", "MW": "0.14", "FT": "0.06", "WW": "0.06", "BS": "0.05" }, "stattrak_available": true },
+      { "name": "M4A4 | Poly Mag", "image": "images/m4a4_polymag.webp", "float_range": "0.00-1.00", "price": { "FN": "0.67", "MW": "0.14", "FT": "0.06", "WW": "0.05", "BS": "0.05" }, "stattrak_available": true }
+    ],
+
+    "restricted": [
+      { "name": "P90 | Vent Rush", "image": "images/p90_ventrush.webp", "float_range": "0.00-0.70", "price": { "FN": "1.67", "MW": "0.61", "FT": "0.39", "WW": "0.37", "BS": "0.36" }, "stattrak_available": true },
+      { "name": "M249 | Downtown", "image": "images/m249_downtown.webp", "float_range": "0.00-0.65", "price": { "FN": "1.53", "MW": "0.59", "FT": "0.37", "WW": "0.37", "BS": "0.36" }, "stattrak_available": true },
+      { "name": "SG 553 | Dragon Tech", "image": "images/sg553_dragontech.webp", "float_range": "0.00-0.70", "price": { "FN": "1.52", "MW": "0.62", "FT": "0.40", "WW": "0.38", "BS": "0.38" }, "stattrak_available": true },
+      { "name": "R8 Revolver | Crazy 8", "image": "images/r8revolver_crazy8.webp", "float_range": "0.00-1.00", "price": { "FN": "3.32", "MW": "0.81", "FT": "0.40", "WW": "0.37", "BS": "0.35" }, "stattrak_available": true },
+      { "name": "Dual Berettas | Flora Carnivora", "image": "images/dualberettas_floracarnivora.webp", "float_range": "0.00-1.00", "price": { "FN": "3.14", "MW": "0.82", "FT": "0.40", "WW": "0.37", "BS": "0.36" }, "stattrak_available": true }
+    ],
+
+    "classified": [
+      { "name": "P250 | Visions", "image": "images/p250_visions.webp", "float_range": "0.00-0.70", "price": { "FN": "9.58", "MW": "4.38", "FT": "3.08", "WW": "3.03", "BS": "2.95" }, "stattrak_available": true },
+      { "name": "Sawed-Off | KissLove", "image": "images/sawedoff_kisslove.webp", "float_range": "0.00-1.00", "price": { "FN": "14.70", "MW": "5.53", "FT": "3.17", "WW": "3.09", "BS": "3.04" }, "stattrak_available": true },
+      { "name": "AK-47 | Ice Coaled", "image": "images/ak47_icecoaled.webp", "float_range": "0.00-0.77", "price": { "FN": "15.74", "MW": "7.55", "FT": "4.92", "WW": "4.13", "BS": "3.70" }, "stattrak_available": true }
+    ],
+
+    "covert": [
+      { "name": "USP-S | Printstream", "image": "images/usps_printstream.webp", "float_range": "0.00-0.85", "price": { "FN": "113.30", "MW": "55.10", "FT": "33.71", "WW": "32.57", "BS": "30.00" }, "stattrak_available": true },
+      { "name": "AWP | Chromatic Aberration", "image": "images/awp_chromaticaberration.webp", "float_range": "0.00-0.70", "price": { "FN": "75.25", "MW": "37.72", "FT": "27.44", "WW": "26.42", "BS": "24.21" }, "stattrak_available": true }
+    ],
+
+    "exceedingly_rare": [
+      { "name": "Hand Wraps | Constrictor", "image": "images/handwraps_constrictor.webp", "float_range": "0.06-0.80", "price": { "FN": "322.02", "MW": "94.25", "FT": "57.00", "WW": "54.93", "BS": "51.51" }, "stattrak_available": false },
+      { "name": "Hand Wraps | Giraffe", "image": "images/handwraps_giraffe.webp", "float_range": "0.06-0.80", "price": { "FN": "398.18", "MW": "93.08", "FT": "55.00", "WW": "53.60", "BS": "51.39" }, "stattrak_available": false },
+      { "name": "Hand Wraps | Desert Shamagh", "image": "images/handwraps_desertshamagh.webp", "float_range": "0.06-0.80", "price": { "FN": "387.37", "MW": "83.41", "FT": "51.00", "WW": "50.03", "BS": "49.98" }, "stattrak_available": false },
+      { "name": "Broken Fang Gloves | Needle Point", "image": "images/brokenfanggloves_needlepoint.webp", "float_range": "0.06-0.80", "price": { "FN": "281.38", "MW": "71.94", "FT": "57.46", "WW": "54.99", "BS": "54.87" }, "stattrak_available": false },
+      { "name": "Hand Wraps | CAUTION!", "image": "images/handwraps_caution.webp", "float_range": "0.06-0.80", "price": { "FN": "972.94", "MW": "262.00", "FT": "140.00", "WW": "127.53", "BS": "121.86" }, "stattrak_available": false },
+      { "name": "Specialist Gloves | Field Agent", "image": "images/specialistgloves_fieldagent.webp", "float_range": "0.06-0.80", "price": { "FN": "1362.95", "MW": "400.21", "FT": "147.63", "WW": "127.56", "BS": "106.72" }, "stattrak_available": false },
+      { "name": "Sport Gloves | Slingshot", "image": "images/sportgloves_slingshot.webp", "float_range": "0.06-0.80", "price": { "FN": "4205.01", "MW": "1528.93", "FT": "500.19", "WW": "398.20", "BS": "251.42" }, "stattrak_available": false },
+      { "name": "Driver Gloves | Queen Jaguar", "image": "images/drivergloves_queenjaguar.webp", "float_range": "0.06-0.80", "price": { "FN": "609.05", "MW": "122.86", "FT": "60.70", "WW": "59.79", "BS": "56.74" }, "stattrak_available": false },
+      { "name": "Broken Fang Gloves | Yellow-banded", "image": "images/brokenfanggloves_yellowbanded.webp", "float_range": "0.06-0.80", "price": { "FN": "352.05", "MW": "92.29", "FT": "58.82", "WW": "57.22", "BS": "53.07" }, "stattrak_available": false },
+      { "name": "Moto Gloves | Blood Pressure", "image": "images/motogloves_bloodpressure.webp", "float_range": "0.06-0.80", "price": { "FN": "855.74", "MW": "246.21", "FT": "140.36", "WW": "128.12", "BS": "88.20" }, "stattrak_available": false },
+      { "name": "Moto Gloves | 3rd Commando Company", "image": "images/motogloves_3rdcommandocompany.webp", "float_range": "0.06-0.80", "price": { "FN": "318.43", "MW": "88.46", "FT": "50.96", "WW": "50.01", "BS": "47.84" }, "stattrak_available": false },
+      { "name": "Broken Fang Gloves | Unhinged", "image": "images/brokenfanggloves_unhinged.webp", "float_range": "0.06-0.80", "price": { "FN": "347.17", "MW": "95.67", "FT": "64.98", "WW": "62.52", "BS": "60.23" }, "stattrak_available": false },
+      { "name": "Specialist Gloves | Lt. Commander", "image": "images/specialistgloves_ltcommander.webp", "float_range": "0.06-0.80", "price": { "FN": "881.38", "MW": "258.78", "FT": "115.89", "WW": "109.00", "BS": "96.00" }, "stattrak_available": false },
+      { "name": "Broken Fang Gloves | Jade", "image": "images/brokenfanggloves_jade.webp", "float_range": "0.06-0.80", "price": { "FN": "604.97", "MW": "151.51", "FT": "90.48", "WW": "88.92", "BS": "82.57" }, "stattrak_available": false },
+      { "name": "Moto Gloves | Finish Line", "image": "images/motogloves_finishline.webp", "float_range": "0.06-0.80", "price": { "FN": "680.29", "MW": "220.00", "FT": "98.15", "WW": "85.00", "BS": "67.06" }, "stattrak_available": false },
+      { "name": "Sport Gloves | Nocts", "image": "images/sportgloves_nocts.webp", "float_range": "0.06-0.80", "price": { "FN": "3475.10", "MW": "1493.38", "FT": "616.90", "WW": "588.59", "BS": "455.88" }, "stattrak_available": false },
+      { "name": "Driver Gloves | Black Tie", "image": "images/drivergloves_blacktie.webp", "float_range": "0.06-0.80", "price": { "FN": "1605.02", "MW": "415.12", "FT": "148.22", "WW": "135.85", "BS": "114.77" }, "stattrak_available": false },
+      { "name": "Moto Gloves | Smoke Out", "image": "images/motogloves_smokeout.webp", "float_range": "0.06-0.80", "price": { "FN": "867.54", "MW": "243.52", "FT": "119.95", "WW": "105.98", "BS": "88.73" }, "stattrak_available": false },
+      { "name": "Sport Gloves | Big Game", "image": "images/sportgloves_biggame.webp", "float_range": "0.06-0.80", "price": { "FN": "1219.24", "MW": "314.44", "FT": "175.91", "WW": "159.66", "BS": "141.74" }, "stattrak_available": false },
+      { "name": "Driver Gloves | Rezan the Red", "image": "images/drivergloves_rezanthered.webp", "float_range": "0.06-0.80", "price": { "FN": "761.77", "MW": "180.17", "FT": "82.13", "WW": "78.34", "BS": "71.37" }, "stattrak_available": false },
+      { "name": "Sport Gloves | Scarlet Shamagh", "image": "images/sportgloves_scarletshamagh.webp", "float_range": "0.06-0.80", "price": { "FN": "1521.22", "MW": "488.94", "FT": "255.14", "WW": "226.55", "BS": "194.02" }, "stattrak_available": false },
+      { "name": "Specialist Gloves | Tiger Strike", "image": "images/specialistgloves_tigerstrike.webp", "float_range": "0.06-0.80", "price": { "FN": "1600.82", "MW": "531.56", "FT": "220.54", "WW": "178.05", "BS": "121.80" }, "stattrak_available": false },
+      { "name": "Specialist Gloves | Marble Fade", "image": "images/specialistgloves_marblefade.webp", "float_range": "0.06-0.80", "price": { "FN": "2055.79", "MW": "561.55", "FT": "172.32", "WW": "150.54", "BS": "132.37" }, "stattrak_available": false },
+      { "name": "Driver Gloves | Snow Leopard", "image": "images/drivergloves_snowleopard.webp", "float_range": "0.06-0.80", "price": { "FN": "2391.77", "MW": "682.35", "FT": "326.27", "WW": "277.16", "BS": "244.80" }, "stattrak_available": false }
+    ]
+  },
+
+    "dreamsandnightmares": {
+    "mil_spec": [
+      { "name": "Sawed-Off | Spirit Board", "image": "images/sawedoff_spiritboard.webp", "float_range": "0.00-1.00", "price": { "FN": "0.66", "MW": "0.15", "FT": "0.05", "WW": "0.05", "BS": "0.02" }, "stattrak_available": true },
+      { "name": "MP5-SD | Necro Jr.", "image": "images/mp5sd_necrojr.webp", "float_range": "0.00-1.00", "price": { "FN": "0.55", "MW": "0.15", "FT": "0.07", "WW": "0.05", "BS": "0.05" }, "stattrak_available": true },
+      { "name": "P2000 | Lifted Spirits", "image": "images/p2000_liftedspirits.webp", "float_range": "0.00-1.00", "price": { "FN": "0.61", "MW": "0.16", "FT": "0.07", "WW": "0.06", "BS": "0.05" }, "stattrak_available": true },
+      { "name": "MAG-7 | Foresight", "image": "images/mag7_foresight.webp", "float_range": "0.00-0.70", "price": { "FN": "0.31", "MW": "0.14", "FT": "0.06", "WW": "0.06", "BS": "0.05" }, "stattrak_available": true },
+      { "name": "MAC-10 | Ensnared", "image": "images/mac10_ensnared.webp", "float_range": "0.00-0.90", "price": { "FN": "0.50", "MW": "0.15", "FT": "0.07", "WW": "0.06", "BS": "0.05" }, "stattrak_available": true },
+      { "name": "SCAR-20 | Poultrygeist", "image": "images/scar20_poultrygeist.webp", "float_range": "0.00-0.57", "price": { "FN": "0.28", "MW": "0.14", "FT": "0.07", "WW": "0.07", "BS": "0.06" }, "stattrak_available": true },
+      { "name": "Five-SeveN | Scrawl", "image": "images/fiveseven_scrawl.webp", "float_range": "0.00-1.00", "price": { "FN": "0.68", "MW": "0.15", "FT": "0.08", "WW": "0.06", "BS": "0.02" }, "stattrak_available": true }
+    ],
+
+    "restricted": [
+      { "name": "G3SG1 | Dream Glade", "image": "images/g3sg1_dreamglade.webp", "float_range": "0.00-1.00", "price": { "FN": "3.47", "MW": "0.89", "FT": "0.53", "WW": "0.50", "BS": "0.44" }, "stattrak_available": true },
+      { "name": "XM1014 | Zombie Offensive", "image": "images/xm1014_zombieoffensive.webp", "float_range": "0.00-0.50", "price": { "FN": "1.34", "MW": "0.57", "FT": "0.54", "WW": "0.52", "BS": "0.48" }, "stattrak_available": true },
+      { "name": "PP-Bizon | Space Cat", "image": "images/ppbizon_spacecat.webp", "float_range": "0.00-0.67", "price": { "FN": "1.48", "MW": "0.69", "FT": "0.52", "WW": "0.50", "BS": "0.50" }, "stattrak_available": true },
+      { "name": "USP-S | Ticket to Hell", "image": "images/usps_tickettohell.webp", "float_range": "0.00-0.76", "price": { "FN": "2.04", "MW": "0.91", "FT": "0.57", "WW": "0.53", "BS": "0.43" }, "stattrak_available": true },
+      { "name": "M4A1-S | Night Terror", "image": "images/m4a1s_nightterror.webp", "float_range": "0.00-0.70", "price": { "FN": "1.90", "MW": "0.90", "FT": "0.80", "WW": "0.72", "BS": "0.51" }, "stattrak_available": true }
+    ],
+
+    "classified": [
+      { "name": "MP7 | Abyssal Apparition", "image": "images/mp7_abyssalapparition.webp", "float_range": "0.00-1.00", "price": { "FN": "15.59", "MW": "7.10", "FT": "5.39", "WW": "5.09", "BS": "4.98" }, "stattrak_available": true },
+      { "name": "Dual Berettas | Melondrama", "image": "images/dualberettas_melondrama.webp", "float_range": "0.00-1.00", "price": { "FN": "16.88", "MW": "7.05", "FT": "5.33", "WW": "5.04", "BS": "4.99" }, "stattrak_available": true },
+      { "name": "FAMAS | Rapid Eye Movement", "image": "images/famas_rapideyemovement.webp", "float_range": "0.00-1.00", "price": { "FN": "16.67", "MW": "7.07", "FT": "5.39", "WW": "5.01", "BS": "4.95" }, "stattrak_available": true }
+    ],
+
+    "covert": [
+      { "name": "AK-47 | Nightwish", "image": "images/ak47_nightwish.webp", "float_range": "0.00-1.00", "price": { "FN": "167.69", "MW": "62.24", "FT": "56.05", "WW": "51.36", "BS": "50.31" }, "stattrak_available": true },
+      { "name": "MP9 | Starlight Protector", "image": "images/mp9_starlightprotector.webp", "float_range": "0.00-0.80", "price": { "FN": "93.83", "MW": "61.94", "FT": "55.65", "WW": "54.00", "BS": "51.94" }, "stattrak_available": true }
+    ],
+
+    "exceedingly_rare": [
+      { "name": "Butterfly Knife | Gamma Doppler Phase 1", "image": "images/butterflyknife_gammadoppler_phase1.webp", "float_range": "0.00-0.08", "price": { "FN": "2383.81", "MW": "2284.61", "FT": "0.00", "WW": "0.00", "BS": "0.00" }, "stattrak_available": true },
+      { "name": "Butterfly Knife | Gamma Doppler Phase 2", "image": "images/butterflyknife_gammadoppler_phase2.webp", "float_range": "0.00-0.08", "price": { "FN": "3400.00", "MW": "3068.69", "FT": "0.00", "WW": "0.00", "BS": "0.00" }, "stattrak_available": true },
+      { "name": "Butterfly Knife | Gamma Doppler Phase 3", "image": "images/butterflyknife_gammadoppler_phase3.webp", "float_range": "0.00-0.08", "price": { "FN": "2315.12", "MW": "2269.61", "FT": "0.00", "WW": "0.00", "BS": "0.00" }, "stattrak_available": true },
+      { "name": "Butterfly Knife | Gamma Doppler Phase 4", "image": "images/butterflyknife_gammadoppler_phase4.webp", "float_range": "0.00-0.08", "price": { "FN": "2382.15", "MW": "2306.39", "FT": "0.00", "WW": "0.00", "BS": "0.00" }, "stattrak_available": true },
+      { "name": "Falchion Knife | Gamma Doppler Emerald", "image": "images/falchionknife_gammadoppler_emerald.webp", "float_range": "0.00-0.08", "price": { "FN": "889.39", "MW": "750.00", "FT": "0.00", "WW": "0.00", "BS": "0.00" }, "stattrak_available": true },
+      { "name": "Falchion Knife | Gamma Doppler Phase 1", "image": "images/falchionknife_gammadoppler_phase1.webp", "float_range": "0.00-0.08", "price": { "FN": "272.17", "MW": "251.52", "FT": "0.00", "WW": "0.00", "BS": "0.00" }, "stattrak_available": true },
+      { "name": "Falchion Knife | Gamma Doppler Phase 2", "image": "images/falchionknife_gammadoppler_phase2.webp", "float_range": "0.00-0.08", "price": { "FN": "315.00", "MW": "265.73", "FT": "0.00", "WW": "0.00", "BS": "0.00" }, "stattrak_available": true },
+      { "name": "Falchion Knife | Gamma Doppler Phase 3", "image": "images/falchionknife_gammadoppler_phase3.webp", "float_range": "0.00-0.08", "price": { "FN": "287.98", "MW": "243.53", "FT": "0.00", "WW": "0.00", "BS": "0.00" }, "stattrak_available": true },
+      { "name": "Falchion Knife | Gamma Doppler Phase 4", "image": "images/falchionknife_gammadoppler_phase4.webp", "float_range": "0.00-0.08", "price": { "FN": "318.22", "MW": "234.46", "FT": "0.00", "WW": "0.00", "BS": "0.00" }, "stattrak_available": true },
+      { "name": "Huntsman Knife | Gamma Doppler Emerald", "image": "images/huntsmanknife_gammadoppler_emerald.webp", "float_range": "0.00-0.08", "price": { "FN": "802.00", "MW": "799.00", "FT": "0.00", "WW": "0.00", "BS": "0.00" }, "stattrak_available": true },
+      { "name": "Huntsman Knife | Gamma Doppler Phase 1", "image": "images/huntsmanknife_gammadoppler_phase1.webp", "float_range": "0.00-0.08", "price": { "FN": "292.66", "MW": "246.65", "FT": "0.00", "WW": "0.00", "BS": "0.00" }, "stattrak_available": true },
+      { "name": "Huntsman Knife | Gamma Doppler Phase 2", "image": "images/huntsmanknife_gammadoppler_phase2.webp", "float_range": "0.00-0.08", "price": { "FN": "411.70", "MW": "268.75", "FT": "0.00", "WW": "0.00", "BS": "0.00" }, "stattrak_available": true },
+      { "name": "Huntsman Knife | Gamma Doppler Phase 3", "image": "images/huntsmanknife_gammadoppler_phase3.webp", "float_range": "0.00-0.08", "price": { "FN": "337.33", "MW": "255.39", "FT": "0.00", "WW": "0.00", "BS": "0.00" }, "stattrak_available": true },
+      { "name": "Huntsman Knife | Gamma Doppler Phase 4", "image": "images/huntsmanknife_gammadoppler_phase4.webp", "float_range": "0.00-0.08", "price": { "FN": "293.26", "MW": "247.11", "FT": "0.00", "WW": "0.00", "BS": "0.00" }, "stattrak_available": true },
+      { "name": "Shadow Daggers | Gamma Doppler Emerald", "image": "images/shadowdaggers_gammadoppler_emerald.webp", "float_range": "0.00-0.08", "price": { "FN": "332.89", "MW": "271.00", "FT": "0.00", "WW": "0.00", "BS": "0.00" }, "stattrak_available": true },
+      { "name": "Shadow Daggers | Gamma Doppler Phase 1", "image": "images/shadowdaggers_gammadoppler_phase1.webp", "float_range": "0.00-0.08", "price": { "FN": "171.08", "MW": "110.25", "FT": "0.00", "WW": "0.00", "BS": "0.00" }, "stattrak_available": true },
+      { "name": "Shadow Daggers | Gamma Doppler Phase 2", "image": "images/shadowdaggers_gammadoppler_phase2.webp", "float_range": "0.00-0.08", "price": { "FN": "130.00", "MW": "109.75", "FT": "0.00", "WW": "0.00", "BS": "0.00" }, "stattrak_available": true },
+      { "name": "Shadow Daggers | Gamma Doppler Phase 3", "image": "images/shadowdaggers_gammadoppler_phase3.webp", "float_range": "0.00-0.08", "price": { "FN": "151.08", "MW": "110.20", "FT": "0.00", "WW": "0.00", "BS": "0.00" }, "stattrak_available": true },
+      { "name": "Shadow Daggers | Gamma Doppler Phase 4", "image": "images/shadowdaggers_gammadoppler_phase4.webp", "float_range": "0.00-0.08", "price": { "FN": "153.18", "MW": "107.25", "FT": "0.00", "WW": "0.00", "BS": "0.00" }, "stattrak_available": true },
+      { "name": "Shadow Daggers | Bright Water", "image": "images/shadowdaggers_brightwater.webp", "float_range": "0.00-0.50", "price": { "FN": "54.39", "MW": "53.47", "FT": "51.12", "WW": "50.65", "BS": "47.87" }, "stattrak_available": true },
+      { "name": "Shadow Daggers | Lore", "image": "images/shadowdaggers_lore.webp", "float_range": "0.00-1.00", "price": { "FN": "126.62", "MW": "73.38", "FT": "63.48", "WW": "62.53", "BS": "62.00" }, "stattrak_available": true },
+      { "name": "Shadow Daggers | Autotronic", "image": "images/shadowdaggers_autotronic.webp", "float_range": "0.00-0.85", "price": { "FN": "98.58", "MW": "63.19", "FT": "59.11", "WW": "58.38", "BS": "57.96" }, "stattrak_available": true },
+      { "name": "Shadow Daggers | Black Laminate", "image": "images/shadowdaggers_blacklaminate.webp", "float_range": "0.00-1.00", "price": { "FN": "72.81", "MW": "50.99", "FT": "50.08", "WW": "50.00", "BS": "49.52" }, "stattrak_available": true },
+      { "name": "Falchion Knife | Black Laminate", "image": "images/falchionknife_blacklaminate.webp", "float_range": "0.00-1.00", "price": { "FN": "115.67", "MW": "73.51", "FT": "68.26", "WW": "66.96", "BS": "64.71" }, "stattrak_available": true },
+      { "name": "Shadow Daggers | Freehand", "image": "images/shadowdaggers_freehand.webp", "float_range": "0.00-0.48", "price": { "FN": "73.39", "MW": "68.01", "FT": "67.03", "WW": "55.99", "BS": "54.16" }, "stattrak_available": true },
+      { "name": "Huntsman Knife | Bright Water", "image": "images/huntsmanknife_brightwater.webp", "float_range": "0.00-0.50", "price": { "FN": "82.20", "MW": "72.13", "FT": "70.14", "WW": "69.78", "BS": "62.25" }, "stattrak_available": true },
+      { "name": "Huntsman Knife | Black Laminate", "image": "images/huntsmanknife_blacklaminate.webp", "float_range": "0.00-1.00", "price": { "FN": "137.39", "MW": "79.42", "FT": "71.04", "WW": "69.49", "BS": "69.13" }, "stattrak_available": true },
+      { "name": "Bowie Knife | Bright Water", "image": "images/bowieknife_brightwater.webp", "float_range": "0.00-0.50", "price": { "FN": "79.26", "MW": "74.56", "FT": "65.87", "WW": "62.83", "BS": "60.81" }, "stattrak_available": true },
+      { "name": "Huntsman Knife | Freehand", "image": "images/huntsmanknife_freehand.webp", "float_range": "0.00-0.48", "price": { "FN": "90.08", "MW": "84.21", "FT": "76.26", "WW": "71.75", "BS": "70.64" }, "stattrak_available": true },
+      { "name": "Bowie Knife | Black Laminate", "image": "images/bowieknife_blacklaminate.webp", "float_range": "0.00-1.00", "price": { "FN": "107.71", "MW": "66.97", "FT": "61.62", "WW": "61.34", "BS": "60.52" }, "stattrak_available": true },
+      { "name": "Falchion Knife | Freehand", "image": "images/falchionknife_freehand.webp", "float_range": "0.00-0.48", "price": { "FN": "99.89", "MW": "90.98", "FT": "84.20", "WW": "83.00", "BS": "80.71" }, "stattrak_available": true },
+      { "name": "Huntsman Knife | Autotronic", "image": "images/huntsmanknife_autotronic.webp", "float_range": "0.00-0.85", "price": { "FN": "200.00", "MW": "130.57", "FT": "106.39", "WW": "105.51", "BS": "97.35" }, "stattrak_available": true },
+      { "name": "Bowie Knife | Autotronic", "image": "images/bowieknife_autotronic.webp", "float_range": "0.00-0.85", "price": { "FN": "171.22", "MW": "111.14", "FT": "95.67", "WW": "92.49", "BS": "90.48" }, "stattrak_available": true },
+      { "name": "Falchion Knife | Autotronic", "image": "images/falchionknife_autotronic.webp", "float_range": "0.00-0.85", "price": { "FN": "172.77", "MW": "119.30", "FT": "101.65", "WW": "101.22", "BS": "100.00" }, "stattrak_available": true },
+      { "name": "Falchion Knife | Bright Water", "image": "images/falchionknife_brightwater.webp", "float_range": "0.00-0.50", "price": { "FN": "88.91", "MW": "78.18", "FT": "70.62", "WW": "70.53", "BS": "69.00" }, "stattrak_available": true },
+      { "name": "Bowie Knife | Freehand", "image": "images/bowieknife_freehand.webp", "float_range": "0.00-0.48", "price": { "FN": "87.87", "MW": "86.15", "FT": "78.01", "WW": "77.38", "BS": "72.52" }, "stattrak_available": true },
+      { "name": "Bowie Knife | Lore", "image": "images/bowieknife_lore.webp", "float_range": "0.00-1.00", "price": { "FN": "230.00", "MW": "115.82", "FT": "93.49", "WW": "91.73", "BS": "87.00" }, "stattrak_available": true },
+      { "name": "Huntsman Knife | Lore", "image": "images/huntsmanknife_lore.webp", "float_range": "0.00-0.65", "price": { "FN": "160.93", "MW": "119.39", "FT": "105.00", "WW": "95.98", "BS": "95.46" }, "stattrak_available": true },
+      { "name": "Butterfly Knife | Black Laminate", "image": "images/butterflyknife_blacklaminate.webp", "float_range": "0.00-1.00", "price": { "FN": "964.81", "MW": "729.20", "FT": "664.22", "WW": "639.69", "BS": "610.78" }, "stattrak_available": true },
+      { "name": "Falchion Knife | Lore", "image": "images/falchionknife_lore.webp", "float_range": "0.00-0.65", "price": { "FN": "159.24", "MW": "122.40", "FT": "112.00", "WW": "101.29", "BS": "100.72" }, "stattrak_available": true },
+      { "name": "Butterfly Knife | Bright Water", "image": "images/butterflyknife_brightwater.webp", "float_range": "0.00-0.50", "price": { "FN": "672.51", "MW": "595.76", "FT": "535.00", "WW": "526.18", "BS": "515.26" }, "stattrak_available": true },
+      { "name": "Butterfly Knife | Lore", "image": "images/butterflyknife_lore.webp", "float_range": "0.00-1.00", "price": { "FN": "2666.39", "MW": "1052.57", "FT": "689.99", "WW": "603.57", "BS": "533.09" }, "stattrak_available": true },
+      { "name": "Butterfly Knife | Freehand", "image": "images/butterflyknife_freehand.webp", "float_range": "0.00-0.48", "price": { "FN": "729.03", "MW": "642.47", "FT": "590.00", "WW": "570.29", "BS": "562.76" }, "stattrak_available": true },
+      { "name": "Butterfly Knife | Autotronic", "image": "images/butterflyknife_autotronic.webp", "float_range": "0.00-0.85", "price": { "FN": "1750.00", "MW": "1142.84", "FT": "903.54", "WW": "853.79", "BS": "735.53" }, "stattrak_available": true },
+      { "name": "Butterfly Knife | Gamma Doppler Emerald", "image": "images/butterflyknife_gammadoppler_emerald.webp", "float_range": "0.00-0.08", "price": { "FN": "12990.62", "MW": "12250.00", "FT": "0.00", "WW": "0.00", "BS": "0.00" }, "stattrak_available": true },
+      { "name": "Bowie Knife | Gamma Doppler Phase 4", "image": "images/bowieknife_gammadoppler_phase4.webp", "float_range": "0.00-0.08", "price": { "FN": "307.67", "MW": "222.50", "FT": "0.00", "WW": "0.00", "BS": "0.00" }, "stattrak_available": true },
+      { "name": "Bowie Knife | Gamma Doppler Phase 3", "image": "images/bowieknife_gammadoppler_phase3.webp", "float_range": "0.00-0.08", "price": { "FN": "287.22", "MW": "222.42", "FT": "0.00", "WW": "0.00", "BS": "0.00" }, "stattrak_available": true },
+      { "name": "Bowie Knife | Gamma Doppler Phase 2", "image": "images/bowieknife_gammadoppler_phase2.webp", "float_range": "0.00-0.08", "price": { "FN": "310.28", "MW": "237.68", "FT": "0.00", "WW": "0.00", "BS": "0.00" }, "stattrak_available": true },
+      { "name": "Bowie Knife | Gamma Doppler Phase 1", "image": "images/bowieknife_gammadoppler_phase1.webp", "float_range": "0.00-0.08", "price": { "FN": "311.56", "MW": "226.05", "FT": "0.00", "WW": "0.00", "BS": "0.00" }, "stattrak_available": true },
+      { "name": "Bowie Knife | Gamma Doppler Emerald", "image": "images/bowieknife_gammadoppler_emerald.webp", "float_range": "0.00-0.08", "price": { "FN": "1000.00", "MW": "648.23", "FT": "0.00", "WW": "0.00", "BS": "0.00" }, "stattrak_available": true }
+    ]
+  },
+    "revolution": {
+    "mil_spec": [
+      { "name": "P250 | Re.built", "image": "images/p250_rebuilt.webp", "float_range": "0.00-0.90", "price": { "FN": "0.57", "MW": "0.13", "FT": "0.06", "WW": "0.05", "BS": "0.05" }, "stattrak_available": true },
+      { "name": "SCAR-20 | Fragments", "image": "images/scar20_fragments.webp", "float_range": "0.00-0.78", "price": { "FN": "0.34", "MW": "0.13", "FT": "0.06", "WW": "0.06", "BS": "0.06" }, "stattrak_available": true },
+      { "name": "Tec-9 | Rebel", "image": "images/tec9_rebel.webp", "float_range": "0.00-1.00", "price": { "FN": "0.47", "MW": "0.14", "FT": "0.06", "WW": "0.05", "BS": "0.05" }, "stattrak_available": true },
+      { "name": "SG 553 | Cyberforce", "image": "images/sg553_cyberforce.webp", "float_range": "0.00-0.90", "price": { "FN": "0.56", "MW": "0.15", "FT": "0.07", "WW": "0.06", "BS": "0.06" }, "stattrak_available": true },
+      { "name": "MP5-SD | Liquidation", "image": "images/mp5sd_liquidation.webp", "float_range": "0.00-1.00", "price": { "FN": "0.65", "MW": "0.14", "FT": "0.06", "WW": "0.05", "BS": "0.02" }, "stattrak_available": true },
+      { "name": "MAG-7 | Insomnia", "image": "images/mag7_insomnia.webp", "float_range": "0.00-1.00", "price": { "FN": "0.64", "MW": "0.14", "FT": "0.06", "WW": "0.05", "BS": "0.05" }, "stattrak_available": true },
+      { "name": "MP9 | Featherweight", "image": "images/mp9_featherweight.webp", "float_range": "0.00-1.00", "price": { "FN": "0.60", "MW": "0.15", "FT": "0.07", "WW": "0.05", "BS": "0.05" }, "stattrak_available": true }
+    ],
+
+    "restricted": [
+      { "name": "R8 Revolver | Banana Cannon", "image": "images/r8revolver_bananacannon.webp", "float_range": "0.00-1.00", "price": { "FN": "3.21", "MW": "0.79", "FT": "0.37", "WW": "0.36", "BS": "0.32" }, "stattrak_available": true },
+      { "name": "P90 | Neoqueen", "image": "images/p90_neoqueen.webp", "float_range": "0.00-0.60", "price": { "FN": "1.53", "MW": "0.59", "FT": "0.39", "WW": "0.37", "BS": "0.36" }, "stattrak_available": true },
+      { "name": "MAC-10 | Sakkaku", "image": "images/mac10_sakkaku.webp", "float_range": "0.21-0.79", "price": { "FN": "0.00", "MW": "0.00", "FT": "0.49", "WW": "0.36", "BS": "0.34" }, "stattrak_available": true },
+      { "name": "Glock-18 | Umbral Rabbit", "image": "images/glock18_umbralrabbit.webp", "float_range": "0.00-0.75", "price": { "FN": "1.94", "MW": "0.72", "FT": "0.45", "WW": "0.40", "BS": "0.38" }, "stattrak_available": true },
+      { "name": "M4A1-S | Emphorosaur-S", "image": "images/m4a1s_emphorosaurs.webp", "float_range": "0.00-0.80", "price": { "FN": "3.48", "MW": "0.90", "FT": "0.62", "WW": "0.45", "BS": "0.44" }, "stattrak_available": true }
+    ],
+
+    "classified": [
+      { "name": "UMP-45 | Wild Child", "image": "images/ump45_wildchild.webp", "float_range": "0.00-1.00", "price": { "FN": "16.05", "MW": "5.38", "FT": "3.07", "WW": "3.03", "BS": "2.75" }, "stattrak_available": true },
+      { "name": "P2000 | Wicked Sick", "image": "images/p2000_wickedsick.webp", "float_range": "0.00-1.00", "price": { "FN": "16.24", "MW": "5.29", "FT": "3.02", "WW": "2.98", "BS": "2.90" }, "stattrak_available": true },
+      { "name": "AWP | Duality", "image": "images/awp_duality.webp", "float_range": "0.00-0.80", "price": { "FN": "13.33", "MW": "5.30", "FT": "3.08", "WW": "3.04", "BS": "2.98" }, "stattrak_available": true }
+    ],
+
+    "covert": [
+      { "name": "M4A4 | Temukau", "image": "images/m4a4_temukau.webp", "float_range": "0.00-0.80", "price": { "FN": "115.68", "MW": "53.00", "FT": "29.43", "WW": "27.66", "BS": "26.23" }, "stattrak_available": true },
+      { "name": "AK-47 | Head Shot", "image": "images/ak47_headshot.webp", "float_range": "0.00-1.00", "price": { "FN": "108.14", "MW": "57.29", "FT": "29.05", "WW": "27.27", "BS": "24.67" }, "stattrak_available": true }
+    ],
+
+    "exceedingly_rare": [
+      { "name": "Hydra Gloves | Rattler", "image": "images/hydragloves_rattler.webp", "float_range": "0.06-0.80", "price": { "FN": "244.07", "MW": "48.32", "FT": "42.96", "WW": "42.29", "BS": "41.57" }, "stattrak_available": false },
+      { "name": "Hand Wraps | Cobalt Skulls", "image": "images/hydragloves_cobaltskulls.webp", "float_range": "0.06-0.80", "price": { "FN": "1596.24", "MW": "546.00", "FT": "248.50", "WW": "212.03", "BS": "190.51" }, "stattrak_available": false },
+      { "name": "Hand Wraps | Arboreal", "image": "images/hydragloves_arboreal.webp", "float_range": "0.06-0.80", "price": { "FN": "255.21", "MW": "92.27", "FT": "54.32", "WW": "53.96", "BS": "53.11" }, "stattrak_available": false },
+      { "name": "Hydra Gloves | Emerald", "image": "images/hydragloves_emerald.webp", "float_range": "0.06-0.80", "price": { "FN": "275.20", "MW": "63.85", "FT": "46.28", "WW": "45.30", "BS": "44.43" }, "stattrak_available": false },
+      { "name": "Driver Gloves | Racing Green", "image": "images/drivergloves_racinggreen.webp", "float_range": "0.06-0.80", "price": { "FN": "365.80", "MW": "68.41", "FT": "40.74", "WW": "40.61", "BS": "39.86" }, "stattrak_available": false },
+      { "name": "Moto Gloves | POW!", "image": "images/motogloves_pow.webp", "float_range": "0.06-0.80", "price": { "FN": "912.00", "MW": "289.75", "FT": "105.40", "WW": "81.10", "BS": "63.34" }, "stattrak_available": false },
+      { "name": "Specialist Gloves | Buckshot", "image": "images/specialistgloves_buckshot.webp", "float_range": "0.06-0.80", "price": { "FN": "375.08", "MW": "102.70", "FT": "55.74", "WW": "54.43", "BS": "52.87" }, "stattrak_available": false },
+      { "name": "Hand Wraps | Duct Tape", "image": "images/handwraps_ducttape.webp", "float_range": "0.06-0.80", "price": { "FN": "405.37", "MW": "94.99", "FT": "56.13", "WW": "55.57", "BS": "51.63" }, "stattrak_available": false },
+      { "name": "Moto Gloves | Transport", "image": "images/motogloves_transport.webp", "float_range": "0.06-0.80", "price": { "FN": "433.40", "MW": "94.85", "FT": "49.06", "WW": "47.83", "BS": "45.49" }, "stattrak_available": false },
+      { "name": "Hydra Gloves | Mangrove", "image": "images/hydragloves_mangrove.webp", "float_range": "0.06-0.80", "price": { "FN": "222.40", "MW": "47.74", "FT": "42.14", "WW": "41.05", "BS": "40.60" }, "stattrak_available": false },
+      { "name": "Moto Gloves | Turtle", "image": "images/motogloves_turtle.webp", "float_range": "0.06-0.80", "price": { "FN": "710.49", "MW": "210.00", "FT": "84.99", "WW": "73.44", "BS": "62.11" }, "stattrak_available": false },
+      { "name": "Hydra Gloves | Case Hardened", "image": "images/hydragloves_casehardened.webp", "float_range": "0.06-0.80", "price": { "FN": "454.14", "MW": "101.43", "FT": "70.34", "WW": "65.94", "BS": "65.56" }, "stattrak_available": false },
+      { "name": "Hand Wraps | Overprint", "image": "images/handwraps_overprint.webp", "float_range": "0.06-0.80", "price": { "FN": "630.88", "MW": "209.91", "FT": "115.19", "WW": "106.00", "BS": "83.01" }, "stattrak_available": false },
+      { "name": "Driver Gloves | Overtake", "image": "images/drivergloves_overtake.webp", "float_range": "0.06-0.80", "price": { "FN": "490.49", "MW": "122.20", "FT": "61.83", "WW": "60.00", "BS": "56.27" }, "stattrak_available": false },
+      { "name": "Specialist Gloves | Mogul", "image": "images/specialistgloves_mogul.webp", "float_range": "0.06-0.80", "price": { "FN": "722.13", "MW": "223.53", "FT": "112.97", "WW": "104.53", "BS": "97.88" }, "stattrak_available": false },
+      { "name": "Specialist Gloves | Fade", "image": "images/specialistgloves_fade.webp", "float_range": "0.06-0.80", "price": { "FN": "2657.39", "MW": "679.47", "FT": "229.67", "WW": "198.23", "BS": "146.99" }, "stattrak_available": false },
+      { "name": "Driver Gloves | King Snake", "image": "images/drivergloves_kingsnake.webp", "float_range": "0.06-0.80", "price": { "FN": "4198.30", "MW": "659.59", "FT": "173.99", "WW": "159.12", "BS": "137.02" }, "stattrak_available": false },
+      { "name": "Sport Gloves | Bronze Morph", "image": "images/sportgloves_bronzemorph.webp", "float_range": "0.06-0.80", "price": { "FN": "796.18", "MW": "206.00", "FT": "111.30", "WW": "103.12", "BS": "91.19" }, "stattrak_available": false },
+      { "name": "Moto Gloves | Polygon", "image": "images/motogloves_polygon.webp", "float_range": "0.06-0.80", "price": { "FN": "745.67", "MW": "241.05", "FT": "127.95", "WW": "118.11", "BS": "96.32" }, "stattrak_available": false },
+      { "name": "Specialist Gloves | Crimson Web", "image": "images/specialistgloves_crimsonweb.webp", "float_range": "0.06-0.80", "price": { "FN": "1737.29", "MW": "425.16", "FT": "161.79", "WW": "140.27", "BS": "118.11" }, "stattrak_available": false },
+      { "name": "Driver Gloves | Imperial Plaid", "image": "images/drivergloves_imperialplaid.webp", "float_range": "0.06-0.80", "price": { "FN": "1188.49", "MW": "505.57", "FT": "231.93", "WW": "200.83", "BS": "173.97" }, "stattrak_available": false },
+      { "name": "Sport Gloves | Omega", "image": "images/sportgloves_omega.webp", "float_range": "0.06-0.80", "price": { "FN": "2504.32", "MW": "797.00", "FT": "278.95", "WW": "226.17", "BS": "178.41" }, "stattrak_available": false },
+      { "name": "Sport Gloves | Vice", "image": "images/sportgloves_vice.webp", "float_range": "0.06-0.80", "price": { "FN": "10283.17", "MW": "2335.49", "FT": "627.01", "WW": "534.63", "BS": "358.76" }, "stattrak_available": false },
+      { "name": "Sport Gloves | Amphibious", "image": "images/sportgloves_amphibious.webp", "float_range": "0.06-0.80", "price": { "FN": "4361.46", "MW": "970.00", "FT": "413.39", "WW": "340.19", "BS": "288.02" }, "stattrak_available": false }
+    ]
+  },
+    "dreamhack_2014_cobblestone_souvenir": {
+    "consumer": [
+      { "name": "Souvenir Dual Berettas | Briar", "image": "images/dualberettas_briar.webp", "float_range": "0.00-0.22", "price": { "FN": "2.29", "MW": "1.30", "FT": "1.16", "WW": "0.00", "BS": "0.00" }, "stattrak_available": false },
+      { "name": "Souvenir P90 | Storm", "image": "images/p90_storm.webp", "float_range": "0.06-0.80", "price": { "FN": "28.43", "MW": "2.99", "FT": "1.05", "WW": "0.86", "BS": "0.81" }, "stattrak_available": false },
+      { "name": "Souvenir MAC-10 | Indigo", "image": "images/mac10_indigo.webp", "float_range": "0.06-0.80", "price": { "FN": "40.51", "MW": "4.80", "FT": "1.72", "WW": "1.45", "BS": "1.42" }, "stattrak_available": false },
+      { "name": "Souvenir SCAR-20 | Storm", "image": "images/scar20_storm.webp", "float_range": "0.06-0.80", "price": { "FN": "19.97", "MW": "1.71", "FT": "0.83", "WW": "0.77", "BS": "0.60" }, "stattrak_available": false },
+      { "name": "Souvenir UMP-45 | Indigo", "image": "images/ump45_indigo.webp", "float_range": "0.06-0.80", "price": { "FN": "16.88", "MW": "3.09", "FT": "1.22", "WW": "1.06", "BS": "0.91" }, "stattrak_available": false }
+    ],
+
+    "industrial": [
+      { "name": "Souvenir Nova | Green Apple", "image": "images/nova_greenapple.webp", "float_range": "0.00-0.30", "price": { "FN": "7.73", "MW": "4.63", "FT": "4.09", "WW": "0.00", "BS": "0.00" }, "stattrak_available": false },
+      { "name": "Souvenir Sawed-Off | Rust Coat", "image": "images/sawedoff_rustcoat.webp", "float_range": "0.00-0.80", "price": { "FN": "8.27", "MW": "4.58", "FT": "3.00", "WW": "2.80", "BS": "1.85" }, "stattrak_available": false },
+      { "name": "Souvenir MAG-7 | Silver", "image": "images/mag7_silver.webp", "float_range": "0.00-0.08", "price": { "FN": "13.89", "MW": "13.20", "FT": "0.00", "WW": "0.00", "BS": "0.00" }, "stattrak_available": false },
+      { "name": "Souvenir USP-S | Royal Blue", "image": "images/usps_royalblue.webp", "float_range": "0.06-0.80", "price": { "FN": "459.19", "MW": "37.00", "FT": "11.35", "WW": "10.34", "BS": "9.98" }, "stattrak_available": false }
+    ],
+
+    "mil_spec": [
+      { "name": "Souvenir MP9 | Dark Age", "image": "images/mp9_darkage.webp", "float_range": "0.00-0.22", "price": { "FN": "26.82", "MW": "16.09", "FT": "14.92", "WW": "0.00", "BS": "0.00" }, "stattrak_available": false },
+      { "name": "Souvenir P2000 | Chainmail", "image": "images/p2000_chainmail.webp", "float_range": "0.00-0.22", "price": { "FN": "22.64", "MW": "20.00", "FT": "17.79", "WW": "0.00", "BS": "0.00" }, "stattrak_available": false },
+      { "name": "Souvenir Nova | Green Apple", "image": "images/nova_greenapple.webp", "float_range": "0.00-0.30", "price": { "FN": "7.73", "MW": "4.63", "FT": "4.09", "WW": "0.00", "BS": "0.00" }, "stattrak_available": false }
+    ],
+
+    "restricted": [
+      { "name": "Souvenir CZ75-Auto | Chalice", "image": "images/cz75auto_chalice.webp", "float_range": "0.00-0.10", "price": { "FN": "149.62", "MW": "101.31", "FT": "0.00", "WW": "0.00", "BS": "0.00" }, "stattrak_available": false },
+      { "name": "Souvenir Desert Eagle | Hand Cannon", "image": "images/deserteagle_handcannon.webp", "float_range": "0.01-0.70", "price": { "FN": "670.00", "MW": "395.00", "FT": "347.99", "WW": "224.82", "BS": "194.56" }, "stattrak_available": false }
+    ],
+
+    "classified": [
+      { "name": "Souvenir M4A1-S | Knight", "image": "images/m4a1s_knight.webp", "float_range": "0.00-0.10", "price": { "FN": "2757.03", "MW": "2450.00", "FT": "0.00", "WW": "0.00", "BS": "0.00" }, "stattrak_available": false }
+    ],
+
+    "covert": [
+      { "name": "Souvenir AWP | Dragon Lore", "image": "images/awp_dragonlore.webp", "float_range": "0.00-0.70", "price": { "FN": "492418.00", "MW": "211037.00", "FT": "56276.45", "WW": "41725.41", "BS": "35172.73" }, "stattrak_available": false }
+    ]
+  },
+    "snakebite": {
+    "mil_spec": [
+      { "name": "SG 553 | Heavy Metal", "image": "images/sg553_heavymetal.webp", "float_range": "0.00-1.00", "price": { "FN": "0.82", "MW": "0.20", "FT": "0.17", "WW": "0.15", "BS": "0.14" }, "stattrak_available": true },
+      { "name": "M249 | O.S.I.P.R.", "image": "images/m249_osipr.webp", "float_range": "0.00-0.70", "price": { "FN": "0.47", "MW": "0.22", "FT": "0.19", "WW": "0.18", "BS": "0.15" }, "stattrak_available": true },
+      { "name": "UMP-45 | Oscillator", "image": "images/ump45_oscillator.webp", "float_range": "0.00-0.50", "price": { "FN": "0.41", "MW": "0.20", "FT": "0.17", "WW": "0.15", "BS": "0.14" }, "stattrak_available": true },
+      { "name": "R8 Revolver | Junk Yard", "image": "images/r8revolver_junkyard.webp", "float_range": "0.00-1.00", "price": { "FN": "0.79", "MW": "0.23", "FT": "0.17", "WW": "0.14", "BS": "0.14" }, "stattrak_available": true },
+      { "name": "CZ75-Auto | Circaetus", "image": "images/cz75auto_circaetus.webp", "float_range": "0.00-0.90", "price": { "FN": "0.82", "MW": "0.22", "FT": "0.18", "WW": "0.15", "BS": "0.15" }, "stattrak_available": true },
+      { "name": "Nova | Windblown", "image": "images/nova_windblown.webp", "float_range": "0.00-0.50", "price": { "FN": "0.43", "MW": "0.22", "FT": "0.20", "WW": "0.19", "BS": "0.19" }, "stattrak_available": true },
+      { "name": "Glock-18 | Clear Polymer", "image": "images/glock18_clearpolymer.webp", "float_range": "0.00-1.00", "price": { "FN": "1.55", "MW": "0.33", "FT": "0.21", "WW": "0.15", "BS": "0.15" }, "stattrak_available": true }
+    ],
+
+    "restricted": [
+      { "name": "Negev | dev_texture", "image": "images/negev_devtexture.webp", "float_range": "0.00-0.65", "price": { "FN": "2.06", "MW": "0.63", "FT": "0.38", "WW": "0.37", "BS": "0.37" }, "stattrak_available": true },
+      { "name": "MAC-10 | Button Masher", "image": "images/mac10_buttonmasher.webp", "float_range": "0.00-1.00", "price": { "FN": "4.15", "MW": "0.83", "FT": "0.39", "WW": "0.36", "BS": "0.35" }, "stattrak_available": true },
+      { "name": "P250 | Cyber Shell", "image": "images/p250_cybershell.webp", "float_range": "0.00-0.85", "price": { "FN": "2.75", "MW": "0.78", "FT": "0.38", "WW": "0.37", "BS": "0.37" }, "stattrak_available": true },
+      { "name": "Desert Eagle | Trigger Discipline", "image": "images/deserteagle_triggerdiscipline.webp", "float_range": "0.00-0.97", "price": { "FN": "3.83", "MW": "1.37", "FT": "0.56", "WW": "0.45", "BS": "0.43" }, "stattrak_available": true },
+      { "name": "AK-47 | Slate", "image": "images/ak47_slate.webp", "float_range": "0.00-1.00", "price": { "FN": "15.05", "MW": "6.17", "FT": "4.17", "WW": "3.24", "BS": "3.12" }, "stattrak_available": true }
+    ],
+
+    "classified": [
+      { "name": "XM1014 | XOXO", "image": "images/xm1014_xoxo.webp", "float_range": "0.00-0.90", "price": { "FN": "19.23", "MW": "5.89", "FT": "3.07", "WW": "2.99", "BS": "2.82" }, "stattrak_available": true },
+      { "name": "Galil AR | Chromatic Aberration", "image": "images/galil_chromaticaberration.webp", "float_range": "0.00-1.00", "price": { "FN": "42.82", "MW": "6.43", "FT": "3.20", "WW": "2.99", "BS": "2.97" }, "stattrak_available": true },
+      { "name": "MP9 | Food Chain", "image": "images/mp9_foodchain.webp", "float_range": "0.00-1.00", "price": { "FN": "20.18", "MW": "6.42", "FT": "3.35", "WW": "3.05", "BS": "3.04" }, "stattrak_available": true }
+    ],
+
+    "covert": [
+      { "name": "USP-S | The Traitor", "image": "images/usps_thetraitor.webp", "float_range": "0.00-1.00", "price": { "FN": "147.58", "MW": "55.35", "FT": "29.50", "WW": "28.24", "BS": "27.82" }, "stattrak_available": true },
+      { "name": "M4A4 | In Living Color", "image": "images/m4a4_inlivingcolor.webp", "float_range": "0.00-0.79", "price": { "FN": "218.79", "MW": "59.64", "FT": "29.85", "WW": "28.07", "BS": "25.34" }, "stattrak_available": true }
+    ],
+
+    "exceedingly_rare": [
+      { "name": "Hand Wraps | Constrictor", "image": "images/handwraps_constrictor.webp", "float_range": "0.06-0.80", "price": { "FN": "315.62", "MW": "96.99", "FT": "57.96", "WW": "56.89", "BS": "54.80" }, "stattrak_available": false },
+      { "name": "Moto Gloves | 3rd Commando Company", "image": "images/motogloves_3rdcommandocompany.webp", "float_range": "0.06-0.80", "price": { "FN": "322.42", "MW": "93.24", "FT": "51.19", "WW": "49.72", "BS": "47.15" }, "stattrak_available": false },
+      { "name": "Hand Wraps | Giraffe", "image": "images/handwraps_giraffe.webp", "float_range": "0.06-0.80", "price": { "FN": "391.99", "MW": "98.49", "FT": "54.77", "WW": "54.56", "BS": "52.64" }, "stattrak_available": false },
+      { "name": "Hand Wraps | Desert Shamagh", "image": "images/handwraps_desertshamagh.webp", "float_range": "0.06-0.80", "price": { "FN": "430.00", "MW": "86.03", "FT": "52.05", "WW": "51.00", "BS": "50.85" }, "stattrak_available": false },
+      { "name": "Broken Fang Gloves | Unhinged", "image": "images/brokenfanggloves_unhinged.webp", "float_range": "0.06-0.80", "price": { "FN": "347.17", "MW": "98.17", "FT": "64.43", "WW": "62.31", "BS": "59.98" }, "stattrak_available": false },
+      { "name": "Broken Fang Gloves | Yellow-banded", "image": "images/brokenfanggloves_yellowbanded.webp", "float_range": "0.06-0.80", "price": { "FN": "370.48", "MW": "91.44", "FT": "59.96", "WW": "57.45", "BS": "53.86" }, "stattrak_available": false },
+      { "name": "Broken Fang Gloves | Needle Point", "image": "images/brokenfanggloves_needlepoint.webp", "float_range": "0.06-0.80", "price": { "FN": "290.00", "MW": "70.60", "FT": "54.40", "WW": "54.27", "BS": "53.46" }, "stattrak_available": false },
+      { "name": "Driver Gloves | Queen Jaguar", "image": "images/drivergloves_queenjaguar.webp", "float_range": "0.06-0.80", "price": { "FN": "609.05", "MW": "125.07", "FT": "61.11", "WW": "57.67", "BS": "56.22" }, "stattrak_available": false },
+      { "name": "Sport Gloves | Slingshot", "image": "images/sportgloves_slingshot.webp", "float_range": "0.06-0.80", "price": { "FN": "4144.20", "MW": "1525.07", "FT": "521.80", "WW": "369.75", "BS": "241.87" }, "stattrak_available": false },
+      { "name": "Moto Gloves | Finish Line", "image": "images/motogloves_finishline.webp", "float_range": "0.06-0.80", "price": { "FN": "665.96", "MW": "212.80", "FT": "100.80", "WW": "85.82", "BS": "67.12" }, "stattrak_available": false },
+      { "name": "Broken Fang Gloves | Jade", "image": "images/brokenfanggloves_jade.webp", "float_range": "0.06-0.80", "price": { "FN": "597.93", "MW": "145.48", "FT": "89.90", "WW": "87.80", "BS": "81.27" }, "stattrak_available": false },
+      { "name": "Sport Gloves | Big Game", "image": "images/sportgloves_biggame.webp", "float_range": "0.06-0.80", "price": { "FN": "1157.97", "MW": "322.34", "FT": "187.64", "WW": "173.35", "BS": "144.34" }, "stattrak_available": false },
+      { "name": "Specialist Gloves | Lt. Commander", "image": "images/specialistgloves_ltcommander.webp", "float_range": "0.06-0.80", "price": { "FN": "866.91", "MW": "264.42", "FT": "121.99", "WW": "109.00", "BS": "98.73" }, "stattrak_available": false },
+      { "name": "Driver Gloves | Rezan the Red", "image": "images/drivergloves_rezanthered.webp", "float_range": "0.06-0.80", "price": { "FN": "761.77", "MW": "180.17", "FT": "82.13", "WW": "78.34", "BS": "71.37" }, "stattrak_available": false },
+      { "name": "Specialist Gloves | Tiger Strike", "image": "images/specialistgloves_tigerstrike.webp", "float_range": "0.06-0.80", "price": { "FN": "1658.98", "MW": "524.99", "FT": "220.54", "WW": "178.05", "BS": "121.80" }, "stattrak_available": false },
+      { "name": "Driver Gloves | Black Tie", "image": "images/drivergloves_blacktie.webp", "float_range": "0.06-0.80", "price": { "FN": "1605.02", "MW": "415.12", "FT": "148.22", "WW": "135.85", "BS": "114.77" }, "stattrak_available": false },
+      { "name": "Moto Gloves | Smoke Out", "image": "images/motogloves_smokeout.webp", "float_range": "0.06-0.80", "price": { "FN": "867.54", "MW": "243.52", "FT": "119.95", "WW": "105.98", "BS": "88.73" }, "stattrak_available": false },
+      { "name": "Hand Wraps | CAUTION!", "image": "images/handwraps_caution.webp", "float_range": "0.06-0.80", "price": { "FN": "972.94", "MW": "262.00", "FT": "140.00", "WW": "127.53", "BS": "121.86" }, "stattrak_available": false },
+      { "name": "Sport Gloves | Scarlet Shamagh", "image": "images/sportgloves_scarletshamagh.webp", "float_range": "0.06-0.80", "price": { "FN": "1521.22", "MW": "488.94", "FT": "255.14", "WW": "226.55", "BS": "194.02" }, "stattrak_available": false },
+      { "name": "Moto Gloves | Blood Pressure", "image": "images/motogloves_bloodpressure.webp", "float_range": "0.06-0.80", "price": { "FN": "855.74", "MW": "246.21", "FT": "140.36", "WW": "128.12", "BS": "88.20" }, "stattrak_available": false },
+      { "name": "Specialist Gloves | Marble Fade", "image": "images/specialistgloves_marblefade.webp", "float_range": "0.06-0.80", "price": { "FN": "2055.79", "MW": "561.55", "FT": "172.32", "WW": "150.54", "BS": "132.37" }, "stattrak_available": false },
+      { "name": "Specialist Gloves | Field Agent", "image": "images/specialistgloves_fieldagent.webp", "float_range": "0.06-0.80", "price": { "FN": "1362.95", "MW": "400.21", "FT": "147.63", "WW": "127.56", "BS": "106.72" }, "stattrak_available": false },
+      { "name": "Driver Gloves | Snow Leopard", "image": "images/drivergloves_snowleopard.webp", "float_range": "0.06-0.80", "price": { "FN": "2391.77", "MW": "682.35", "FT": "326.27", "WW": "277.16", "BS": "244.80" }, "stattrak_available": false },
+      { "name": "Sport Gloves | Nocts", "image": "images/sportgloves_nocts.webp", "float_range": "0.06-0.80", "price": { "FN": "3475.10", "MW": "1493.38", "FT": "616.90", "WW": "588.59", "BS": "455.88" }, "stattrak_available": false }
+    ]
+  }
+}
